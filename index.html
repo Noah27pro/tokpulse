@@ -1,0 +1,2752 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#590028","inverse-on-surface":"#2f3036","surface-variant":"#34343a","primary-container":"#ff4a8d","tertiary-container":"#8e909c","primary":"#ffb1c4","surface-container-highest":"#34343a","on-tertiary-fixed":"#181b25","secondary-container":"#00eefc","on-tertiary-fixed-variant":"#444651","on-surface-variant":"#e5bcc5","surface-dim":"#121318","surface-tint":"#ffb1c4","secondary-fixed-dim":"#00dbe9","on-primary-fixed-variant":"#8f0044","secondary":"#d3fbff","primary-fixed-dim":"#ffb1c4","outline-variant":"#5c3f46","on-secondary-container":"#00686f","on-tertiary-container":"#272933","on-secondary-fixed":"#002022","surface-container-lowest":"#0d0e13","tertiary":"#c4c6d2","secondary-fixed":"#7df4ff","tertiary-fixed":"#e0e2ef","on-surface":"#e3e1e9","on-secondary-fixed-variant":"#004f54","error":"#ffb4ab","tertiary-fixed-dim":"#c4c6d2","on-background":"#e3e1e9","inverse-primary":"#ba005b","background":"#121318","outline":"#ac878f","on-secondary":"#00363a","surface":"#121318","on-error-container":"#ffdad6","error-container":"#93000a","surface-container-low":"#1a1b21","on-primary":"#65002e","on-tertiary":"#2d303a","primary-fixed":"#ffd9e1","on-primary-fixed":"#3f001a","inverse-surface":"#e3e1e9","surface-bright":"#38393f","surface-container":"#1e1f25","surface-container-high":"#292a2f","on-error":"#690005"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-mobile":"1rem","space-lg":"1.5rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.25rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2.5rem"},fontFamily:{"body-lg":["Geist"],"headline-md":["Geist"],"body-sm":["Geist"],"label-code":["JetBrains Mono"],"display-mobile":["Geist"],"body-md":["Geist"],"metric-md":["JetBrains Mono"],"metric-xl":["JetBrains Mono"],"headline-lg-mobile":["Geist"],"headline-lg":["Geist"],"display":["Geist"],"headline-sm":["Geist"],"label-caps":["Geist"]},fontSize:{"body-lg":["1rem",{"lineHeight":"1.6","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-md":["1.5rem",{"lineHeight":"1.3","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["0.75rem",{"lineHeight":"1.4","letterSpacing":"0.01em","fontWeight":"400"}],"label-code":["0.75rem",{"lineHeight":"1.2","letterSpacing":"0.04em","fontWeight":"500"}],"display-mobile":["2.25rem",{"lineHeight":"1.15","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["0.875rem",{"lineHeight":"1.5","letterSpacing":"0em","fontWeight":"400"}],"metric-md":["1.25rem",{"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"500"}],"metric-xl":["2rem",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["1.75rem",{"lineHeight":"1.25","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["2.25rem",{"lineHeight":"1.2","letterSpacing":"-0.03em","fontWeight":"600"}],"display":["3.5rem",{"lineHeight":"1.1","letterSpacing":"-0.04em","fontWeight":"700"}],"headline-sm":["1.125rem",{"lineHeight":"1.4","letterSpacing":"-0.01em","fontWeight":"600"}],"label-caps":["0.6875rem",{"lineHeight":"1.2","letterSpacing":"0.08em","fontWeight":"600"}]}}}}</script></head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="TokPulse Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VjKLlAPYSTLGQDU12QtQ1DJkF9tXy4FlMof5CyZVvZMRbnr5WN1tErKV9iqA-psCO60Dkd7_QoWZsO4BnW7lH8GQEsGlC3h7S6YGMDkXZZSemeRMl9j2bHFPpLK5PMQ-mVSVHgbTDg2vSMz1FITYWNb9mjM46qewY5bCL2R_XuPRthNzo1icFu7gjWZLFDxF5iwYhjirTL833UqcsbacMSKadSc4YsPloKXKXb4H5STxuaHXCpmgRZzAgE"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">TokPulse</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Intelligence</span></div></div><button aria-label="Colapsar menú lateral" class="p-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">dock_to_right</span></button></div><div class="px-space-md py-space-sm"><div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between group cursor-pointer hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm overflow-hidden"><div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary-fixed"><span class="material-symbols-outlined text-[18px]">music_note</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">@creatorpulse</span><span class="material-symbols-outlined text-secondary text-[14px]">verified</span></div><span class="font-label-code text-label-code text-on-surface-variant">1.4M followers</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">unfold_more</span></div></div><nav class="px-space-sm mt-space-sm flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-[0_0_20px_-4px_rgba(255,74,141,0.35)]"><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary-container font-semibold shadow-[0_0_20px_-4px_rgba(255,74,141,0.35)]" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div><span class="w-1.5 h-1.5 rounded-full bg-primary-container opacity-80"></span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="videos" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">play_circle</span><span class="font-body-md text-body-md">Analítica de Vídeos</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="themes" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">radar</span><span class="font-body-md text-body-md">Radar de Temáticas</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-surface-container-high text-secondary">LIVE</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="strategy" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span class="font-body-md text-body-md">Generador Guiones</span></div><span class="font-label-code text-label-code px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">AI PRO</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Configuración & API</span></div></a></nav></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-lowest"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed-dim"></span></span><span class="font-label-code text-label-code text-on-surface font-medium">TikTok & Supabase Live</span></div><span class="font-label-code text-label-code text-on-surface-variant">Sincronizado hace 4 min</span></div><a class="flex items-center justify-between px-space-sm py-space-xs rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">help_outline</span><span class="font-body-sm text-body-sm">Documentación & Soporte</span></div><span class="material-symbols-outlined text-[14px]">open_in_new</span></a></div></aside>
+<div class="pl-[260px]">
+<header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-9 pr-14 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container transition-all" placeholder="Buscar ganchos, vídeos, métricas o plantillas..." type="text"/><div class="absolute right-space-sm top-1/2 -translate-y-1/2 flex items-center gap-0.5 px-space-xs py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface-variant"><span>⌘</span><span>K</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span><span class="font-label-code text-label-code text-on-surface-variant">Algoritmo TikTok v24.2 • 04:00 AM</span></div></div><div class="flex items-center gap-space-md shrink-0"><button class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold shadow-[0_0_20px_-4px_rgba(255,74,141,0.4)] hover:brightness-110 active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[20px]">add</span><span>Generar Guión IA</span></button><button aria-label="Notificaciones" class="relative p-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-body-md text-body-md text-on-surface font-semibold leading-tight">Elena Vance</span><span class="font-label-code text-label-code text-secondary font-medium leading-tight">Tier Enterprise</span></div><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDquUCHd1ubgHqM4gIou8g-fZzfong49T3fDHMmIF8I8AuQYS3cUzErecVmymGh0tVPnlulVkz3h8IHKZx_hW174x6xpqn0_vrOvIPTlspoqKsG-5oATJOh-m1wNHXXLvEnsOMlPxcj306n30OjGT4vBhQhK4Uoddf5kcSDgLeigcHupKVZpPGy_9HQLgXzjEROMRgfoMKJ4QzW4UNky82ofitbpepjXQCm2Y1RYsWsDYi4hCcSbdw5EQ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary-fixed ring-2 ring-surface"></span></div></div></div></div></header>
+<main data-page="dashboard" style="display:block;" class="relative pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 overflow-hidden z-0 pl-[260px]"><div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-3xl"></div></div><div class="relative z-10 w-full p-8"><div class="flex flex-col w-full gap-space-lg">
+<!-- SECTION HEADER & FILTERS -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-code text-label-code">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+          REALTIME ENGINE V4
+        </span>
+<span class="text-on-surface-variant font-label-code text-label-code tracking-wider">SYNC: 100% OK</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Creative Intelligence Dashboard</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+        Métricas consolidadas de engagement, diagnóstico algorítmico y ganchos con alto potencial de viralidad en TikTok.
+      </p>
+</div>
+<!-- Controls Row -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<!-- Account Switcher Pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg shadow-sm">
+<div class="w-6 h-6 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[14px]">alternate_email</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">@sofia.techpulse</span>
+<span class="font-label-code text-[10px] text-secondary leading-tight">1.2M audiencia</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] ml-1">expand_more</span>
+</div>
+<!-- Time Range Selectors -->
+<div class="bg-surface-container-low p-1 rounded-lg flex items-center gap-1 shadow-sm">
+<button class="px-3 py-1.5 rounded bg-surface-container font-label-code text-label-code text-on-surface font-semibold shadow-inner" type="button">
+          Últimos 7 días
+        </button>
+<button class="px-3 py-1.5 rounded font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+          30 días
+        </button>
+<button class="px-3 py-1.5 rounded font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+          Este trimestre
+        </button>
+</div>
+<!-- Export CTA -->
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm font-semibold shadow-sm transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+<span>Exportar Reporte (CSV/PDF)</span>
+</button>
+</div>
+</div>
+<!-- KPI CARDS QUAD (12-COL GRID) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Views -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between overflow-hidden shadow-sm group hover:bg-surface-container transition-colors">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Visualizaciones Totales</span>
+<span class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-container/15 text-secondary-container font-label-code text-label-code font-bold">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+            +24.6%
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface font-bold tracking-tight">14.8M</span>
+<span class="font-label-code text-body-sm text-on-surface-variant">reproducciones</span>
+</div>
+</div>
+<!-- Sparkline Magenta Visual -->
+<div class="mt-space-md pt-space-xs flex items-end justify-between gap-1 h-12">
+<div class="w-full h-full flex items-end">
+<svg class="w-full h-11 overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 160 40">
+<path d="M0 35 Q 20 32, 40 28 T 80 18 T 120 12 T 160 4" fill="none" stroke="#ff4a8d" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 35 Q 20 32, 40 28 T 80 18 T 120 12 T 160 4 L 160 40 L 0 40 Z" fill="url(#grad1)" opacity="0.25"></path>
+<defs>
+<lineargradient id="grad1" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff4a8d" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#ff4a8d" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-code text-body-sm">
+<span>vs. periodo anterior</span>
+<span class="text-primary-container font-semibold">+2.9M extra</span>
+</div>
+</div>
+<!-- Card 2: Retention -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between overflow-hidden shadow-sm group hover:bg-surface-container transition-colors">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Tasa Media de Retención</span>
+<span class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-container/15 text-secondary font-label-code text-label-code font-bold">
+<span class="material-symbols-outlined text-[12px]">trending_up</span>
+            +5.3%
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface font-bold tracking-tight">42.8%</span>
+<span class="font-label-code text-body-sm text-secondary">Nicho: 37.5%</span>
+</div>
+</div>
+<!-- Circular / Gauge Bar Progress -->
+<div class="mt-space-md flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-code text-body-sm">
+<span class="text-on-surface-variant">Benchmark Tech & Lifestyle</span>
+<span class="text-secondary font-medium">Meta >38%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-secondary to-primary-container rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5 text-secondary font-label-code text-body-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Meta superada por 4.8 pts</span>
+</div>
+</div>
+<!-- Card 3: Shares Ratio -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between overflow-hidden shadow-sm group hover:bg-surface-container transition-colors">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Tasa de Compartidos (Shares)</span>
+<span class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-code text-label-code font-bold">
+<span class="material-symbols-outlined text-[12px]">bolt</span>
+            +1.8%
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface font-bold tracking-tight">8.4%</span>
+<span class="font-label-code text-body-sm text-primary-fixed">Impulso FYP Activo</span>
+</div>
+</div>
+<!-- Segmented Velocity Micro-Meter -->
+<div class="mt-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-code text-body-sm text-on-surface-variant">
+<span>Potencial de Viralidad Orgánica</span>
+<span class="text-primary-container font-semibold">Nivel Alto</span>
+</div>
+<div class="grid grid-cols-7 gap-1">
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-primary-container"></div>
+<div class="h-2 rounded bg-surface-container-high"></div>
+</div>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-code text-body-sm">
+<span>Factor clave algoritmo TikTok</span>
+<span class="text-on-surface">3.4x promedio</span>
+</div>
+</div>
+<!-- Card 4: Net Audience Growth -->
+<div class="relative bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between overflow-hidden shadow-sm group hover:bg-surface-container transition-colors">
+<div class="absolute -right-8 -top-8 w-24 h-24 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Crecimiento Neto</span>
+<span class="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-secondary-container/15 text-secondary font-label-code text-label-code font-bold">
+<span class="material-symbols-outlined text-[12px]">group_add</span>
+            +31.2%
+          </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-xl text-metric-xl text-on-surface font-bold tracking-tight">+68.4K</span>
+<span class="font-label-code text-body-sm text-on-surface-variant">este mes</span>
+</div>
+</div>
+<div class="mt-space-md flex items-center gap-space-sm bg-surface-container-high/60 p-space-xs px-space-sm rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+<div class="flex flex-col">
+<span class="font-label-code text-[11px] text-on-surface-variant">Ritmo de adquisición diario</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">+2,280 seg/día</span>
+</div>
+</div>
+<div class="mt-space-xs flex items-center justify-between text-on-surface-variant font-label-code text-body-sm">
+<span>Tasa de cancelación</span>
+<span class="text-secondary font-semibold">< 0.4%</span>
+</div>
+</div>
+</div>
+<!-- CENTRAL ANALYTICS ROW: DUAL SPLIT (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT: RETENTION TIME-SERIES PERFORMANCE GRAPH (65% = 8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<!-- Graph Header & Layer Switchers -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">timeline</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Evolución de Retención vs. Retención en Primeros 3 Segundos</h2>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant mt-0.5">Ventana de análisis: Últimos 14 días (Comparativa cruzada de cohorts)</span>
+</div>
+<!-- Filter Layers -->
+<div class="flex items-center gap-1 bg-surface-container-high p-1 rounded-lg shrink-0">
+<button class="px-2.5 py-1 rounded bg-surface-container font-label-code text-label-code text-on-surface font-semibold shadow-inner" type="button">
+            Retention %
+          </button>
+<button class="px-2.5 py-1 rounded font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+            Views
+          </button>
+<button class="px-2.5 py-1 rounded font-label-code text-label-code text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+            Completion Rate
+          </button>
+</div>
+</div>
+<!-- Graph Legend Badges -->
+<div class="flex items-center gap-space-md py-space-xs font-label-code text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_rgba(255,74,141,0.6)]"></span>
+<span class="text-on-surface font-medium">Retención 3 seg (Hook Hold)</span>
+<span class="text-primary-container font-bold ml-1">71.4% avg</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary-container shadow-[0_0_8px_rgba(0,238,252,0.6)]"></span>
+<span class="text-on-surface font-medium">Retención Completa Media</span>
+<span class="text-secondary font-bold ml-1">42.8% avg</span>
+</div>
+</div>
+<!-- Interactive SVG Chart Area -->
+<div class="relative w-full h-72 mt-space-sm flex items-end">
+<svg class="w-full h-full overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 740 240">
+<defs>
+<!-- Fuchsia Gradient Fill -->
+<lineargradient id="fuchsiaGlow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff4a8d" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#ff4a8d" stop-opacity="0.0"></stop>
+</lineargradient>
+<!-- Cyan Gradient Fill -->
+<lineargradient id="cyanGlow" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00eefc" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#00eefc" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line stroke="#292a2f" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="740" y1="40" y2="40"></line>
+<line stroke="#292a2f" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="740" y1="100" y2="100"></line>
+<line stroke="#292a2f" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="740" y1="160" y2="160"></line>
+<line stroke="#292a2f" stroke-width="1" x1="0" x2="740" y1="220" y2="220"></line>
+<!-- Area Under Curve 1 (Primary Fuchsia) -->
+<path d="M0,80 C60,70 120,40 180,50 C240,60 300,30 360,25 C420,20 480,45 540,35 C600,25 660,15 740,20 L740,220 L0,220 Z" fill="url(#fuchsiaGlow)"></path>
+<!-- Line 1: 3-Second Hook Retention (Fuchsia) -->
+<path d="M0,80 C60,70 120,40 180,50 C240,60 300,30 360,25 C420,20 480,45 540,35 C600,25 660,15 740,20" stroke="#ff4a8d" stroke-linecap="round" stroke-width="3"></path>
+<!-- Area Under Curve 2 (Cyan) -->
+<path d="M0,150 C60,140 120,125 180,130 C240,135 300,110 360,105 C420,100 480,120 540,112 C600,105 660,95 740,90 L740,220 L0,220 Z" fill="url(#cyanGlow)"></path>
+<!-- Line 2: Full Retention (Cyan) -->
+<path d="M0,150 C60,140 120,125 180,130 C240,135 300,110 360,105 C420,100 480,120 540,112 C600,105 660,95 740,90" stroke="#00eefc" stroke-linecap="round" stroke-width="3"></path>
+<!-- Active Day Marker & Hotspot Tooltip at D11 (X=540) -->
+<line stroke="#e5bcc5" stroke-dasharray="3 3" stroke-width="1.5" x1="540" x2="540" y1="0" y2="220"></line>
+<circle cx="540" cy="35" fill="#ff4a8d" r="5" stroke="#121318" stroke-width="2"></circle>
+<circle cx="540" cy="112" fill="#00eefc" r="5" stroke="#121318" stroke-width="2"></circle>
+</svg>
+<!-- Floating Glassmorphic Tooltip Pin -->
+<div class="absolute left-[70%] top-6 -translate-x-1/2 bg-surface-container-highest/95 backdrop-blur-md p-space-sm rounded-lg shadow-xl pointer-events-none flex flex-col gap-1 z-20 min-w-[170px]">
+<div class="flex items-center justify-between font-label-code text-[11px] text-on-surface-variant pb-1">
+<span>Día 11 • 28 Oct</span>
+<span class="text-secondary font-bold">Pico Viral</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-code text-body-sm">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Hook 3s</span>
+<span class="font-bold text-primary-fixed">79.2%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-code text-body-sm">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary-container"></span>Retención</span>
+<span class="font-bold text-secondary">48.6%</span>
+</div>
+<div class="text-[10px] font-label-code text-on-surface-variant pt-1">
+            Vídeo: "5 Trucos de Automatización..."
+          </div>
+</div>
+</div>
+<!-- X-Axis Labels -->
+<div class="flex justify-between items-center text-on-surface-variant font-label-code text-[11px] pt-space-xs">
+<span>Día 1</span>
+<span>Día 3</span>
+<span>Día 5</span>
+<span>Día 7</span>
+<span>Día 9</span>
+<span class="text-secondary font-bold">Día 11</span>
+<span>Día 13</span>
+<span>Hoy</span>
+</div>
+</div>
+<!-- RIGHT: REAL-TIME ALGORITHM DIAGNOSTIC (35% = 4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Diagnóstico Algoritmo</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/15 text-secondary font-label-code text-label-code font-bold">EN VIVO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Auditoría algorítmica continua basada en los parámetros ponderados de la For You Page.</p>
+<!-- Big Score Semaphore Widget -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container flex items-center justify-between shadow-inner">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Salud del Perfil</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-display-mobile text-display-mobile font-bold text-secondary-fixed">96</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-semibold">/100</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Excelente distribución FYP
+            </span>
+</div>
+<!-- Ring Indicator SVG -->
+<div class="relative w-20 h-20 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="96, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center text-secondary font-label-code text-body-sm font-bold">
+              TOP 2%
+            </div>
+</div>
+</div>
+<!-- Weighted Algorithm Factors Breakdown -->
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-code text-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">timer</span>
+                Tiempo de visualización
+              </span>
+<span class="text-on-surface font-semibold">94%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-code text-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">bookmark</span>
+                Guardados (Saves Rate)
+              </span>
+<span class="text-on-surface font-semibold">88%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-code text-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">replay</span>
+                Replays (Loop Rate)
+              </span>
+<span class="text-on-surface font-semibold">91%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary-fixed rounded-full" style="width: 91%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-code text-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">gavel</span>
+                Penalizaciones Copyright
+              </span>
+<span class="text-secondary font-bold">0% (Limpio)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Footnote -->
+<div class="mt-space-md pt-space-sm bg-surface-container/60 p-space-sm rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">tips_and_updates</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tu cuenta califica para el <strong class="text-on-surface">Boost Prioritario de Algoritmo de fin de semana</strong>.
+        </p>
+</div>
+</div>
+</div>
+<!-- IN-DEPTH VIDEO PERFORMANCE MOSAIC (VISUAL RICHNESS) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Top Post 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex gap-space-md items-center shadow-sm hover:bg-surface-container transition-colors">
+<div class="w-20 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Cyberpunk workspace with multiple neon screens running analytics in magenta and cyan, ultra-modern creator setup with cinematic soft shadows, high detail photorealistic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlu2YTCfSePF4ZNZOpZN_gVYcK7Sn38te6UMcCiwNkR-_cum2VGDCn56QEx6UU2sByM1bWwK27AIOBuNEPYeg3H1M_jdEkrZSuzMHZpBHfCEU3FLEHEhR2Fho6o3BOQGM1Dh67RiyDL7RrW6_jTOe0xa2-aBol_FO9sowvu2SslyXJZiL2U1YoFolYx84vBf67wlQwOznXUaZQ-mY4X-JkMG7JJs1oY98ZsNYn3W68uxzVE69J2iTWcQ"/>
+<div class="absolute bottom-1 left-1 px-1 py-0.5 rounded bg-surface-container-lowest/80 font-label-code text-[10px] text-on-surface">
+          0:34
+        </div>
+</div>
+<div class="flex flex-col min-w-0 justify-between h-full">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-code text-[11px] font-semibold">VIRAL SPIKE</span>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold truncate mt-1">Cómo hackear la atención en 2 segundos</h3>
+<p class="font-label-code text-body-sm text-on-surface-variant mt-0.5">3.2M vistas • 9.8% shares</p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-secondary font-label-code text-body-sm font-semibold">Retention: 54%</span>
+<span class="text-on-surface-variant text-[11px]">|</span>
+<span class="text-on-surface font-label-code text-body-sm">+18.2K subs</span>
+</div>
+</div>
+</div>
+<!-- Top Post 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex gap-space-md items-center shadow-sm hover:bg-surface-container transition-colors">
+<div class="w-20 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A smartphone displaying high-velocity video feeds with colorful kinetic typography and glowing futuristic interface graphics, dramatic neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZseZwEdLhffX6QD1b0Xylfz3Prf6JnpZnmZv0BAp4YmppC9s2AvgtBMLOZDa_pfwGITRIsq6WKz76gR58KP5Dj6ER4fEhZL48xmbf8P-WTqXtNVGPcQ77Y3R179qtTiQdUamvz_x3xZyof4LDHw5YN-RL6ZO0TI-vQbkdkCMkUz_yBnZZ2JkEW7QJu1mh7y0ZNl8-ASr3o_ZMH3BU5nPUfruS3U3145tVaNZWuycFL9VMBYODHLrwlA"/>
+<div class="absolute bottom-1 left-1 px-1 py-0.5 rounded bg-surface-container-lowest/80 font-label-code text-[10px] text-on-surface">
+          0:48
+        </div>
+</div>
+<div class="flex flex-col min-w-0 justify-between h-full">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-code text-[11px] font-semibold">ALTO RETORNO</span>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold truncate mt-1">Setup de productividad con IA 2025</h3>
+<p class="font-label-code text-body-sm text-on-surface-variant mt-0.5">1.9M vistas • 7.4% shares</p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-secondary font-label-code text-body-sm font-semibold">Retention: 46%</span>
+<span class="text-on-surface-variant text-[11px]">|</span>
+<span class="text-on-surface font-label-code text-body-sm">+11.4K subs</span>
+</div>
+</div>
+</div>
+<!-- Top Post 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex gap-space-md items-center shadow-sm hover:bg-surface-container transition-colors">
+<div class="w-20 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Modern tech creator in high contrast studio speaking into a podcast boom mic, dramatic rim lighting in electric fuchsia and cyan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsrhXLnxRbEmCIp6y-SMwyHmhbCOHCWtcgh9eTwvIZVKidLDf4TWBAazxaYBs1RyWALtliBJU_5x6Cs--hQdgoElNPBlco7GFrkN1NGjli0qVINn6NjwejUuT8ug-3JU16y32whjREerXA6Tj3nFLLQ3euuJsXGZYHZ7PEYNh1M0EnJQaUvWbsbL5cGan3tckUdKIvv2WXphtuqItWRxjnEz_4PN-Ts7t7Fjft2QmiaQ8OAoOnZgAx3A"/>
+<div class="absolute bottom-1 left-1 px-1 py-0.5 rounded bg-surface-container-lowest/80 font-label-code text-[10px] text-on-surface">
+          0:29
+        </div>
+</div>
+<div class="flex flex-col min-w-0 justify-between h-full">
+<div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-code text-[11px] font-semibold">TREND ACCEL</span>
+<h3 class="font-body-md text-body-md text-on-surface font-semibold truncate mt-1">Por qué dejé de usar plantillas típicas</h3>
+<p class="font-label-code text-body-sm text-on-surface-variant mt-0.5">940K vistas • 6.2% shares</p>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="text-secondary font-label-code text-body-sm font-semibold">Retention: 41%</span>
+<span class="text-on-surface-variant text-[11px]">|</span>
+<span class="text-on-surface font-label-code text-body-sm">+6.8K subs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM SECTION: TRENDING HOOKS OF THE DAY (HIGH-CONVERSION CALLOUT) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Ambient cyan glow sheen -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Section Banner Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Hooks con mayor tasa de conversión detectados hoy en tu nicho</h2>
+<span class="font-label-code text-label-code text-secondary font-medium px-2 py-0.5 rounded bg-surface-container">actualizado hace 35 min</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-headline-sm text-body-md font-semibold shadow-lg transition-transform active:scale-95 shrink-0" type="button">
+<span>Cargar en el Generador de Guiones IA</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- 3 Hook Cards Array -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Hook 1 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary font-label-code text-label-code font-semibold">
+                HOOK #1 • PATRÓN DISRUPTIVO
+              </span>
+<button aria-label="Copiar Gancho" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<p class="font-headline-sm text-body-lg text-on-surface font-semibold mt-space-xs leading-snug">
+              “El 90% de los creadores comete este error con el gancho inicial...”
+            </p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs text-on-surface-variant font-label-code text-body-sm">
+<div class="flex items-center justify-between">
+<span>Retención proyectada:</span>
+<span class="text-primary-container font-bold">76%</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Formato recomendado:</span>
+<span class="text-on-surface font-medium truncate ml-2">Pantalla dividida + Texto</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container text-on-surface font-label-code text-body-sm font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Usar en Guión</span>
+</button>
+</div>
+<!-- Hook 2 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary-container font-label-code text-label-code font-semibold">
+                HOOK #2 • URGENCIA & FOMO
+              </span>
+<button aria-label="Copiar Gancho" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<p class="font-headline-sm text-body-lg text-on-surface font-semibold mt-space-xs leading-snug">
+              “Deja de hacer esto si quieres superar las 100k vistas en 24 horas...”
+            </p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs text-on-surface-variant font-label-code text-body-sm">
+<div class="flex items-center justify-between">
+<span>Potencial viral:</span>
+<span class="text-primary-container font-bold">94%</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Tasa de guardados:</span>
+<span class="text-secondary font-bold">+45%</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container text-on-surface font-label-code text-body-sm font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Usar en Guión</span>
+</button>
+</div>
+<!-- Hook 3 -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col justify-between hover:bg-surface-container-high transition-all group">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-secondary-fixed font-label-code text-label-code font-semibold">
+                HOOK #3 • CURIOSIDAD & CASO
+              </span>
+<button aria-label="Copiar Gancho" class="text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<p class="font-headline-sm text-body-lg text-on-surface font-semibold mt-space-xs leading-snug">
+              “Probé el secreto de retención que usan las cuentas de 1M y esto pasó...”
+            </p>
+<div class="flex flex-col gap-1 mt-space-sm pt-space-xs text-on-surface-variant font-label-code text-body-sm">
+<div class="flex items-center justify-between">
+<span>Reproducción completa:</span>
+<span class="text-secondary font-bold">68%</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Formato recomendado:</span>
+<span class="text-on-surface font-medium truncate ml-2">Storytelling reactivo</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg bg-surface-container-high group-hover:bg-primary-container group-hover:text-on-primary-container text-on-surface font-label-code text-body-sm font-semibold transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Usar en Guión</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></div></main><main data-page="videos" style="display:none;" class="relative pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 overflow-hidden z-0 pl-[260px]"><div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-3xl"></div></div><div class="relative z-10 w-full p-8"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header de Sección y Métricas Clave -->
+<section class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary">Módulo de Rendimiento</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-code text-label-code text-on-surface-variant">Sync API TikTok v2.4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Histórico y Analítica de Vídeos</h1>
+<p class="font-body-lg text-body-lg text-tertiary">
+        Auditoría granular de cada publicación, métricas de retención por segundo y diagnóstico de distribución algorítmica.
+      </p>
+</div>
+<!-- Micro KPIs Header -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm">
+<div class="flex flex-col px-space-md py-space-sm bg-surface-container rounded-xl shadow-md min-w-[140px]">
+<span class="font-label-code text-label-code text-tertiary">Publicados</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">58</span>
+<span class="font-body-sm text-body-sm text-secondary">+12% m/m</span>
+</div>
+</div>
+<div class="flex flex-col px-space-md py-space-sm bg-surface-container rounded-xl shadow-md min-w-[170px]">
+<span class="font-label-code text-label-code text-tertiary">Promedio Vistas</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">255K</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/vídeo</span>
+</div>
+</div>
+<div class="flex flex-col px-space-md py-space-sm bg-surface-container-high rounded-xl shadow-md min-w-[170px]">
+<span class="font-label-code text-label-code text-secondary-fixed">Finalización Media</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-metric-md text-metric-md text-secondary-container font-bold">34.2%</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">Tier A</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Barra de Filtros Avanzada -->
+<section class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center gap-space-md">
+<!-- Input de búsqueda -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-tertiary text-[20px]">search</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container text-on-surface font-body-md text-body-md placeholder:text-tertiary rounded-lg focus:outline-none focus:bg-surface-container-highest transition-colors" id="video-search-input" placeholder="Buscar por título, temática, gancho o sonido utilizado..." type="text"/>
+</div>
+<!-- Filtros Dropdown -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-body-sm text-body-sm px- space-md py-2.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container-highest transition-colors">
+<option value="all">Categoría: Todos</option>
+<option value="tech">Tech & AI</option>
+<option value="tips">Consejos Creadores</option>
+<option value="hacks">Hacks de Retención</option>
+<option value="vlog">Behind the Scenes</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-body-sm text-body-sm px-space-md py-2.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container-highest transition-colors">
+<option value="all">Rendimiento: Todos</option>
+<option value="top">🔥 Top Tier (>500k)</option>
+<option value="good">⚡ Buen Rendimiento</option>
+<option value="low">⚠️ Bajo Rendimiento</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px] pointer-events-none">expand_more</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-body-sm text-body-sm px-space-md py-2.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container-highest transition-colors">
+<option>Últimos 30 días</option>
+<option>Últimos 7 días</option>
+<option>Este trimestre</option>
+<option>Año 2025</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px] pointer-events-none">calendar_month</span>
+</div>
+<div class="relative">
+<select class="appearance-none bg-surface-container text-on-surface font-body-sm text-body-sm px-space-md py-2.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container-highest transition-colors">
+<option>Sonido: Todos</option>
+<option>Sonido Original</option>
+<option>Audio Tendencia</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-tertiary text-[18px] pointer-events-none">music_note</span>
+</div>
+<div class="h-6 w-[1px] bg-surface-container-highest hidden sm:block"></div>
+<!-- Ordenar -->
+<div class="relative">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 bg-surface-container text-secondary font-body-sm text-body-sm rounded-lg hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">sort</span>
+<span>Vistas (Descendente)</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Layout Principal: Tabla de Datos + Panel Lateral Deslizante -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Tabla Avanzada de Vídeos -->
+<div class="lg:col-span-8 flex flex-col bg-surface-container-low rounded-xl shadow-lg overflow-hidden">
+<!-- Encabezado de la Tabla -->
+<div class="grid grid-cols-12 gap-space-sm px-space-md py-space-sm bg-surface-container font-label-caps text-label-caps text-tertiary uppercase tracking-wider items-center select-none">
+<div class="col-span-5 flex items-center gap-space-xs">
+<span>Vídeo & Título</span>
+</div>
+<div class="col-span-2 text-right">
+<span>Vistas</span>
+</div>
+<div class="col-span-2 text-center">
+<span>Finalización</span>
+</div>
+<div class="col-span-2 text-center">
+<span>Algoritmo</span>
+</div>
+<div class="col-span-1 text-right">
+<span>Info</span>
+</div>
+</div>
+<!-- Cuerpo de la Tabla / Filas -->
+<div class="flex flex-col" id="videos-table-body">
+<!-- Fila 1 (Activa / Seleccionada por defecto) -->
+<div class="video-row group grid grid-cols-12 gap-space-sm px-space-md py-space-md items-center cursor-pointer transition-colors bg-surface-container-high/80 hover:bg-surface-container-high shadow-sm" data-video-id="1" onclick="selectVideoRow(1)">
+<div class="col-span-5 flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up dramatic TikTok creator looking into lens with cinematic magenta and cyan neon rim lighting, tech studio interior background, high-contrast digital creator mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdpsiDVoeyTFIXa4dPF00Q-3SrEWMw-L2IaWULFaNcH8cEPwfOvtsbVhQVRFcMGvw_9JYjO5i2zyW_GMxdIy5Vqz0QJa9YNd9xZwYd-qMhDFm9yrl-9JVX42yf9tW4Xcb2Ywkc7lUlYWcSFFe3LJB0gUiYTa1l5u_UrQZHR21vlfqggyirHNVYcJtJ-ZRhkh0ZrSFR1EM4pGWpLOl9_gOAJyN9QZywIJppPHl1-WLsyB6aAxQColbFTA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-code text-[10px] px-1 rounded bg-surface-container-lowest/90 text-on-surface">0:45</span>
+</div>
+<div class="flex flex-col min-w-0 gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-medium">Estrategia TikTok</span>
+<span class="font-label-code text-label-code text-tertiary">Hace 3 días</span>
+</div>
+<h2 class="font-headline-sm text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+                Cómo estructurar un gancho de 3 segundos que retiene al 80%
+              </h2>
+<div class="flex items-center gap-space-sm text-tertiary font-label-code text-label-code">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">share</span> 42.8K</span>
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bookmark</span> 89.1K</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 text-right">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">1.4M</span>
+<span class="block font-label-code text-label-code text-secondary font-medium">+142% vs avg</span>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-1">
+<span class="font-metric-md text-body-md text-on-surface font-semibold">52%</span>
+<div class="w-full max-w-[80px] h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full" style="width: 52%"></div>
+</div>
+<span class="font-label-code text-[10px] text-tertiary">14s avg watch</span>
+</div>
+<div class="col-span-2 flex justify-center">
+<div class="flex flex-col items-center">
+<div class="px-2 py-1 rounded bg-primary-container/20 text-primary font-label-code text-label-code font-bold">
+                98/100
+              </div>
+<span class="font-label-caps text-[9px] text-primary uppercase mt-0.5">Viral Ultra</span>
+</div>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="p-1 rounded text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Fila 2 -->
+<div class="video-row group grid grid-cols-12 gap-space-sm px-space-md py-space-md items-center cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container" data-video-id="2" onclick="selectVideoRow(2)">
+<div class="col-span-5 flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic cyber interface with holographic graphs and artificial intelligence dashboard displays, cold neon blue aesthetic, high-tech TikTok format video thumb" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaU6pKSlwToAfKwHCu3GFNGu_CSkjt2AxJY2L1wlac3wFY0jvhbu6lKBhGpJIJ1biXlj1Sggjmg5OkAOnAhJFv6WnLnYJwOkHSjb1axC5TMcvrIgUdHAeQq0JisTy3oDfZdAAZBFWYSSLwNkOYS8blx2vKkzVKrzZROI2VRpgN6scEZ28oy2RD5vvctKa0lctQ3Bga5D3j-XtZkx3S1Rtu-HPnldpmDOHMbMQUsVzPhw4qNv3Pnh2ZgQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-code text-[10px] px-1 rounded bg-surface-container-lowest/90 text-on-surface">0:58</span>
+</div>
+<div class="flex flex-col min-w-0 gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-medium">IA Tools</span>
+<span class="font-label-code text-label-code text-tertiary">Hace 6 días</span>
+</div>
+<h2 class="font-headline-sm text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+                3 Herramientas de IA secretas para creadores en 2025
+              </h2>
+<div class="flex items-center gap-space-sm text-tertiary font-label-code text-label-code">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">share</span> 31.5K</span>
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bookmark</span> 64.2K</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 text-right">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">890K</span>
+<span class="block font-label-code text-label-code text-secondary font-medium">+88% vs avg</span>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-1">
+<span class="font-metric-md text-body-md text-on-surface font-semibold">44%</span>
+<div class="w-full max-w-[80px] h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full" style="width: 44%"></div>
+</div>
+<span class="font-label-code text-[10px] text-tertiary">11s avg watch</span>
+</div>
+<div class="col-span-2 flex justify-center">
+<div class="flex flex-col items-center">
+<div class="px-2 py-1 rounded bg-secondary-container/20 text-secondary font-label-code text-label-code font-bold">
+                92/100
+              </div>
+<span class="font-label-caps text-[9px] text-secondary uppercase mt-0.5">High Reach</span>
+</div>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="p-1 rounded text-tertiary hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Fila 3 -->
+<div class="video-row group grid grid-cols-12 gap-space-sm px-space-md py-space-md items-center cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container" data-video-id="3" onclick="selectVideoRow(3)">
+<div class="col-span-5 flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dramatic smartphone screen glowing in dark creative studio displaying viral TikTok analytics graph plummeting and spiking, cinematic dark mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwjaCFwAAb8Gw4Drtk6VQnGm6HG5orOm-QH5wLWgeIkJ3HN9FxiVAljmLe6g4VeA7doqFMse7waIXygFiB7Yf-6C01CpggKRvwTZRKmpiOSl889V0a5PLtJrgylmG4Gl-UAGHwMm_0OAMXUdnjtXt9_TCxpiMVNbgwbUXDN-R8RqBkRRGp-jhtSKrXkfqep22NyLO1-gn-s30Ql5JxcEdq3TkKAY-7xGMVx5jhR2RGkH-XfN0Q7gn-dw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-code text-[10px] px-1 rounded bg-surface-container-lowest/90 text-on-surface">0:39</span>
+</div>
+<div class="flex flex-col min-w-0 gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Algoritmo</span>
+<span class="font-label-code text-label-code text-tertiary">Hace 11 días</span>
+</div>
+<h2 class="font-headline-sm text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+                Por qué tus TikToks se quedan estancados en 200 vistas
+              </h2>
+<div class="flex items-center gap-space-sm text-tertiary font-label-code text-label-code">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">share</span> 18.2K</span>
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bookmark</span> 39.0K</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 text-right">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">640K</span>
+<span class="block font-label-code text-label-code text-secondary font-medium">+35% vs avg</span>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-1">
+<span class="font-metric-md text-body-md text-on-surface font-semibold">38%</span>
+<div class="w-full max-w-[80px] h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full" style="width: 38%"></div>
+</div>
+<span class="font-label-code text-[10px] text-tertiary">9s avg watch</span>
+</div>
+<div class="col-span-2 flex justify-center">
+<div class="flex flex-col items-center">
+<div class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-code text-label-code font-bold">
+                87/100
+              </div>
+<span class="font-label-caps text-[9px] text-tertiary uppercase mt-0.5">Estable</span>
+</div>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="p-1 rounded text-tertiary hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Fila 4 -->
+<div class="video-row group grid grid-cols-12 gap-space-sm px-space-md py-space-md items-center cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container" data-video-id="4" onclick="selectVideoRow(4)">
+<div class="col-span-5 flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Content creator talking head setup with soft diffuse keylight and purple ambient accent lamps, vertical framing video thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-eVyqgT0c82ABgawKAWMLK6_svtnvc240-eRPEf1JZE2zsqe1do4sGd5DwCAhikSZ25oR0ANc0k4m2RrFeDLoah2uMgSnCRdyXa-FYgjOgo3Oj_yNod1cwcV5D0Tt9vpFGF5_-qpm0nE9WwGHiSoSD20W-U5mRM4Po_tjXPaQt9EN2KdzGQ7UcHK34FpGtKCb4TMEa_emgnopc6dpqM0ozKSSp2AtOmnChncMKjqciDMoJlgHc7S_dQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-code text-[10px] px-1 rounded bg-surface-container-lowest/90 text-on-surface">0:32</span>
+</div>
+<div class="flex flex-col min-w-0 gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-medium">Formatos</span>
+<span class="font-label-code text-label-code text-tertiary">Hace 18 días</span>
+</div>
+<h2 class="font-headline-sm text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+                El formato de vídeo corto que más engagement genera
+              </h2>
+<div class="flex items-center gap-space-sm text-tertiary font-label-code text-label-code">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">share</span> 12.1K</span>
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bookmark</span> 24.5K</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 text-right">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">420K</span>
+<span class="block font-label-code text-label-code text-tertiary font-medium">-2% vs avg</span>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-1">
+<span class="font-metric-md text-body-md text-on-surface font-semibold">35%</span>
+<div class="w-full max-w-[80px] h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full" style="width: 35%"></div>
+</div>
+<span class="font-label-code text-[10px] text-tertiary">7.8s avg watch</span>
+</div>
+<div class="col-span-2 flex justify-center">
+<div class="flex flex-col items-center">
+<div class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-code text-label-code font-bold">
+                81/100
+              </div>
+<span class="font-label-caps text-[9px] text-tertiary uppercase mt-0.5">Sólido</span>
+</div>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="p-1 rounded text-tertiary hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Fila 5 -->
+<div class="video-row group grid grid-cols-12 gap-space-sm px-space-md py-space-md items-center cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container" data-video-id="5" onclick="selectVideoRow(5)">
+<div class="col-span-5 flex items-center gap-space-md min-w-0">
+<div class="relative w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Behind the scenes fast-paced editing studio, multiple monitors displaying timelines and video rendering, dark creative workspace neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCum7DmNlFGEl_UQltVJQTbBqIavT9kQwnqBQX3SgQctTPIKUZUYRQOz39DyjyogshJi-3OgH10rG23bC6GxHBfdPG3ZHwuM3YhkSoJ4yaqdbTsP5CeyVQ-ZScbIKclvOXtsBpaKiYXK7OdT5kABMpITzhziklf-ueNmeemV8rYw4eFyZ_tIEyWLPVIgWb5AkRJbEUlQy6vDUMJfYmdQBPotmeyK2Qib4T2IdaDF7YWXHFDuQJRvSJx9g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-1 right-1 font-label-code text-[10px] px-1 rounded bg-surface-container-lowest/90 text-on-surface">1:12</span>
+</div>
+<div class="flex flex-col min-w-0 gap-1">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded-full bg-surface-container-highest text-tertiary font-medium">Behind the Scenes</span>
+<span class="font-label-code text-label-code text-tertiary">Hace 24 días</span>
+</div>
+<h2 class="font-headline-sm text-body-md text-on-surface font-semibold truncate group-hover:text-primary transition-colors">
+                Vlog: Un día produciendo 10 vídeos en 2 horas
+              </h2>
+<div class="flex items-center gap-space-sm text-tertiary font-label-code text-label-code">
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">share</span> 4.3K</span>
+<span class="flex items-center gap-0.5"><span class="material-symbols-outlined text-[14px]">bookmark</span> 8.7K</span>
+</div>
+</div>
+</div>
+<div class="col-span-2 text-right">
+<span class="font-metric-md text-metric-md text-on-surface font-bold">185K</span>
+<span class="block font-label-code text-label-code text-error font-medium">-27% vs avg</span>
+</div>
+<div class="col-span-2 flex flex-col items-center gap-1">
+<span class="font-metric-md text-body-md text-on-surface font-semibold">26%</span>
+<div class="w-full max-w-[80px] h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary-container rounded-full" style="width: 26%"></div>
+</div>
+<span class="font-label-code text-[10px] text-tertiary">6.1s avg watch</span>
+</div>
+<div class="col-span-2 flex justify-center">
+<div class="flex flex-col items-center">
+<div class="px-2 py-1 rounded bg-error-container/20 text-error font-label-code text-label-code font-bold">
+                71/100
+              </div>
+<span class="font-label-caps text-[9px] text-error uppercase mt-0.5">Optimizable</span>
+</div>
+</div>
+<div class="col-span-1 flex justify-end">
+<button class="p-1 rounded text-tertiary hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Paginación / Footer Tabla -->
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container font-label-code text-label-code text-tertiary">
+<span>Mostrando 1 - 5 de 58 vídeos</span>
+<div class="flex items-center gap-space-xs">
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-tertiary hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-semibold">1</span>
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-tertiary hover:text-on-surface">2</button>
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-tertiary hover:text-on-surface">3</button>
+<span class="px-1 text-tertiary">...</span>
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-tertiary hover:text-on-surface">12</button>
+<button class="p-1.5 rounded hover:bg-surface-container-highest text-tertiary hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Panel de Detalle de Vídeo ("Vídeo Activo Seleccionado") -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-xl relative overflow-hidden flex flex-col gap-space-md">
+<!-- Luz de fondo decorativa interior -->
+<div class="absolute -top-16 -right-16 w-44 h-44 bg-primary-container/15 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Encabezado del Panel -->
+<div class="flex items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Vídeo Activo Seleccionado</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 line-clamp-2" id="panel-video-title">
+              Cómo estructurar un gancho de 3 segundos que retiene al 80%
+            </h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-code text-label-code font-bold shrink-0">
+            ID #8492
+          </span>
+</div>
+<!-- Curva de Retención Segundo a Segundo (SVG Pro) -->
+<div class="flex flex-col gap-space-xs bg-surface-container rounded-xl p-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Curva de Retención (0s a 45s)</span>
+<span class="font-label-code text-label-code text-secondary">Tasa 3s: 82%</span>
+</div>
+<div class="relative w-full h-36 mt-1 flex items-end">
+<!-- Inline Chart SVG con gradiente y picos descritos -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 300 120">
+<defs>
+<lineargradient id="chartGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ff4a8d" stop-opacity="0.35"></stop>
+<stop offset="70%" stop-color="#00eefc" stop-opacity="0.10"></stop>
+<stop offset="100%" stop-color="#121318" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="chartLine" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#ff4a8d"></stop>
+<stop offset="45%" stop-color="#00eefc"></stop>
+<stop offset="100%" stop-color="#ff4a8d"></stop>
+</lineargradient>
+</defs>
+<!-- Guías horizontales de porcentaje -->
+<line stroke="#34343a" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="300" y1="20" y2="20"></line>
+<line stroke="#34343a" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="300" y1="60" y2="60"></line>
+<line stroke="#34343a" stroke-dasharray="3 3" stroke-width="0.8" x1="0" x2="300" y1="100" y2="100"></line>
+<!-- Área bajo la curva -->
+<!-- 
+                Trayectoria:
+                0s (0,15) 100%
+                2s (20,38) Caída breve a 78%
+                3s (30,30) Repunte gancho a 82%
+                14s (100,75) Valle del 8% a los 14s
+                15s (115,50) Repunte potente en segundo 15
+                30s (210,65) Plateau estable
+                45s (300,72) Final a 52%
+              -->
+<path d="M 0 15 
+                   C 10 20, 15 38, 20 38 
+                   C 25 38, 28 30, 30 30 
+                   C 50 32, 85 75, 100 75 
+                   C 107 75, 110 50, 115 50 
+                   C 140 52, 180 65, 210 65 
+                   C 250 65, 280 70, 300 72 
+                   L 300 120 L 0 120 Z" fill="url(#chartGradient)"></path>
+<!-- Línea de trazado -->
+<path d="M 0 15 
+                   C 10 20, 15 38, 20 38 
+                   C 25 38, 28 30, 30 30 
+                   C 50 32, 85 75, 100 75 
+                   C 107 75, 110 50, 115 50 
+                   C 140 52, 180 65, 210 65 
+                   C 250 65, 280 70, 300 72" fill="none" stroke="url(#chartLine)" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Marcador: Caída en 2s -->
+<circle cx="20" cy="38" fill="#ff4a8d" r="3"></circle>
+<!-- Marcador: Repunte en 15s -->
+<circle class="animate-pulse" cx="115" cy="50" fill="#00eefc" r="4"></circle>
+</svg>
+</div>
+<!-- Marcas de tiempo del eje X -->
+<div class="flex justify-between font-label-code text-[10px] text-tertiary pt-1">
+<span>0s (Hook)</span>
+<span class="text-error font-medium">0:02 Drop</span>
+<span class="text-secondary font-semibold">0:15 Spike</span>
+<span>0:30</span>
+<span>0:45 (Outro)</span>
+</div>
+</div>
+<!-- Diagnóstico Profundo de la IA -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-high">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_awesome</span>
+<span class="font-headline-sm text-body-md text-on-surface font-semibold">Diagnóstico TokPulse AI</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-tertiary">
+<p class="leading-relaxed">
+              El <strong class="text-on-surface font-semibold">gancho retuvo al 82%</strong> en los primeros 3s gracias a la interrupción de patrón en fotograma inicial.
+            </p>
+<div class="p-space-xs px-2.5 rounded bg-surface-container-highest text-secondary-fixed flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[16px] shrink-0 mt-0.5">tips_and_updates</span>
+<span class="font-label-code text-label-code">
+<strong>Recomendación:</strong> Acortar la transición en 0:14 para evitar el valle del 8%.
+              </span>
+</div>
+</div>
+</div>
+<!-- Métricas Rápidas del Vídeo Activo -->
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="block font-label-caps text-[9px] text-tertiary uppercase">Algoritmo</span>
+<span class="font-metric-md text-body-md text-primary font-bold">98/100</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="block font-label-caps text-[9px] text-tertiary uppercase">Shares</span>
+<span class="font-metric-md text-body-md text-on-surface font-bold">42.8K</span>
+</div>
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="block font-label-caps text-[9px] text-tertiary uppercase">Retención 3s</span>
+<span class="font-metric-md text-body-md text-secondary font-bold">82.4%</span>
+</div>
+</div>
+<!-- Botón de Acción Principal -->
+<button class="w-full flex items-center justify-center gap-space-sm h-12 rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md font-bold shadow-lg hover:brightness-110 active:scale-[0.98] transition-all" onclick="triggerDuplicateTemplate()" type="button">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+<span>Duplicar formato en Generador IA</span>
+</button>
+<button class="w-full flex items-center justify-center gap-space-xs text-tertiary hover:text-on-surface font-body-sm text-body-sm py-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Ver vídeo en TikTok Web</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interacción: Selección interactiva de filas para actualizar el Drawer lateral -->
+<script>
+  function selectVideoRow(id) {
+    const rows = document.querySelectorAll('.video-row');
+    rows.forEach(r => {
+      r.classList.remove('bg-surface-container-high', 'bg-surface-container-high/80');
+      r.classList.add('bg-surface-container-low');
+    });
+
+    const activeRow = document.querySelector(`[data-video-id="${id}"]`);
+    if (activeRow) {
+      activeRow.classList.remove('bg-surface-container-low');
+      activeRow.classList.add('bg-surface-container-high');
+      
+      const titleElem = activeRow.querySelector('h2');
+      const panelTitle = document.getElementById('panel-video-title');
+      if (titleElem && panelTitle) {
+        panelTitle.innerText = titleElem.innerText;
+      }
+    }
+  }
+
+  function triggerDuplicateTemplate() {
+    const btn = event.currentTarget;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">sync</span><span>Copiando estructura a IA...</span>`;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">check</span><span>¡Estructura clonada! Redirigiendo...</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2000);
+    }, 700);
+  }
+</script></div></main><main data-page="themes" style="display:none;" class="relative pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 overflow-hidden z-0 pl-[260px]"><div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-3xl"></div></div><div class="relative z-10 w-full p-8"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header de Sección -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-64 h-64 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs w-fit px-space-sm py-1 rounded-full bg-surface-container-highest shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-80"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span>
+</span>
+<span class="font-label-code text-label-code text-secondary tracking-wide uppercase">Algorithmic Vector Stream</span>
+<span class="text-on-surface-variant font-label-code text-label-code opacity-40">•</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Cluster TikTok Latam & España</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-space-xs">
+          Radar de Temáticas y Tendencias en Tiempo Real
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Clasificación de nichos por volumen de búsqueda, tasa de retención promedio y saturación de competencia en TikTok.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-xl bg-surface-container shadow-md">
+<span class="material-symbols-outlined text-secondary text-[20px] animate-spin" style="animation-duration: 9s;">sync</span>
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-secondary font-semibold flex items-center gap-1">
+              Sincronización cada 24 horas
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Próxima recarga en <span class="text-on-surface font-label-code font-semibold">4h 12m</span>
+</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all text-body-md font-body-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filtros de Nicho</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Desglose Gráfico de Temáticas (Barras Comparativas) -->
+<div class="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px]">leaderboard</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Rendimiento por Pilares de Contenido</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Benchmark acumulado sobre 4.8M de impresiones analizadas en la cuenta</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-lg">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Métrica Clave:</span>
+<span class="font-label-code text-label-code text-secondary font-semibold">Retención al Segundo 3.0</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-space-md mt-space-xs">
+<!-- Pilar 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tutoriales Prácticos de IA</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary-container font-semibold">
+              Priorizar • Oportunidad Alta 🔥
+            </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span>Alcance: <strong class="text-on-surface font-metric-md text-metric-md">1.8M</strong></span>
+<span>Guardados: <strong class="text-secondary font-metric-md text-metric-md">14.2%</strong></span>
+<span>Saturación: <span class="text-on-surface font-semibold">Media (38%)</span></span>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Tasa de Retención Media</span>
+<span class="text-primary-container font-metric-md text-body-md font-bold">58.4%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container via-primary to-secondary-container shadow-sm" style="width: 58.4%;"></div>
+</div>
+</div>
+</div>
+<!-- Pilar 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Desmitificando Mitos del Algoritmo</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary font-semibold">
+              Explorar • Gema Oculta ⭐
+            </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span>Alcance: <strong class="text-on-surface font-metric-md text-metric-md">1.2M</strong></span>
+<span>Guardados: <strong class="text-secondary font-metric-md text-metric-md">18.6%</strong></span>
+<span>Saturación: <span class="text-secondary font-semibold">Baja (19%)</span></span>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Tasa de Retención Media</span>
+<span class="text-secondary font-metric-md text-body-md font-bold">51.2%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-secondary-fixed-dim via-secondary-container to-secondary shadow-sm" style="width: 51.2%;"></div>
+</div>
+</div>
+</div>
+<!-- Pilar 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">03</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Hacks de Productividad en 30s</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-semibold">
+              Optimizar • Saturación Alta ⚠️
+            </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span>Alcance: <strong class="text-on-surface font-metric-md text-metric-md">950K</strong></span>
+<span>Guardados: <strong class="text-on-surface font-metric-md text-metric-md">8.1%</strong></span>
+<span>Saturación: <span class="text-primary-container font-semibold">Alta (82%)</span></span>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Tasa de Retención Media</span>
+<span class="text-on-surface font-metric-md text-body-md font-bold">44.7%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-surface-variant via-outline to-outline-variant shadow-sm" style="width: 44.7%;"></div>
+</div>
+</div>
+</div>
+<!-- Pilar 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm transition-all hover:bg-surface-container-high">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">04</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Behind The Scenes & Rutina</span>
+<span class="font-label-code text-label-code px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-semibold">
+              Revaluar • Saturación Moderada
+            </span>
+</div>
+<div class="flex items-center gap-space-md font-label-code text-label-code text-on-surface-variant">
+<span>Alcance: <strong class="text-on-surface font-metric-md text-metric-md">410K</strong></span>
+<span>Guardados: <strong class="text-on-surface font-metric-md text-metric-md">4.5%</strong></span>
+<span>Saturación: <span class="text-on-surface font-semibold">Moderada (54%)</span></span>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Tasa de Retención Media</span>
+<span class="text-on-surface-variant font-metric-md text-body-md font-bold">32.1%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-lowest overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-surface-variant shadow-sm" style="width: 32.1%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Matriz de Oportunidades: Cuadrantes 2x2 Interactivos -->
+<div class="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">bubble_chart</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Matriz Cuadrante de Oportunidades</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dispersión estratégica: Saturación de Creadores vs Tasa de Retención & Coeficiente Viral</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code px-space-xs py-1 rounded bg-secondary-container/10 text-secondary font-semibold">
+          Eje X: Saturación | Eje Y: Retención
+        </span>
+</div>
+</div>
+<!-- Interactive Quadrant Canvas Simulation -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs">
+<!-- Cuadrante 1: Alta Demanda / Baja Competencia (SWEET SPOT) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-md group hover:bg-surface-container-high transition-all">
+<div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-secondary-container/15 blur-2xl"></div>
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex flex-col gap-1">
+<span class="font-label-code text-label-code text-secondary uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Cuadrante Oro
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Alta Retención / Baja Competencia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Máxima probabilidad de posicionamiento en el algoritmo For You.</p>
+</div>
+<span class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container font-label-code font-bold flex items-center justify-center text-body-sm">
+            Q1
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Prompt Engineering en Vídeo</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-semibold">+220% ROI viral</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Auditoría en Directo de Cuentas</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-semibold">+185% Retención</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-code text-label-code pt-space-xs text-on-surface-variant border-t-0">
+<span>Oportunidad: <span class="text-secondary font-bold">9.4 / 10</span></span>
+<span class="text-secondary underline cursor-pointer font-medium hover:text-secondary-fixed">Ver 12 ganchos asociados →</span>
+</div>
+</div>
+<!-- Cuadrante 2: Tendencias Emergentes (High Growth) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-md group hover:bg-surface-container-high transition-all">
+<div class="absolute -right-8 -top-8 w-40 h-40 rounded-full bg-primary-container/15 blur-2xl"></div>
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="flex flex-col gap-1">
+<span class="font-label-code text-label-code text-primary uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+              Crecimiento Exponencial
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tendencias Emergentes Rápidas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Picos tempranos con saturación ascendente en las últimas 72 horas.</p>
+</div>
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-label-code font-bold flex items-center justify-center text-body-sm">
+            Q2
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Comparativa Modelos Locales IA</span>
+</div>
+<span class="font-label-code text-label-code text-primary font-semibold">+310% Búsquedas</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Debates Deepfake Ético</span>
+</div>
+<span class="font-label-code text-label-code text-primary font-semibold">+94% Compartidos</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-code text-label-code pt-space-xs text-on-surface-variant">
+<span>Ventana de entrada: <span class="text-primary font-bold">~48 Horas</span></span>
+<span class="text-primary underline cursor-pointer font-medium hover:text-primary-fixed">Monitorear temáticas →</span>
+</div>
+</div>
+<!-- Cuadrante 3: Océano Rojo (Saturado / Alta Competencia) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-md group hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-code text-label-code text-error uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+              Alta Fricción
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Océano Rojo (Saturado)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Alta producción de creadores con caída pronunciada en watch-time medio.</p>
+</div>
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface font-label-code font-bold flex items-center justify-center text-body-sm">
+            Q3
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Top 5 Webs de IA Gratuitas</span>
+</div>
+<span class="font-label-code text-label-code text-error">-42% Retención</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Trucos genéricos de ChatGPT</span>
+</div>
+<span class="font-label-code text-label-code text-error">Fatiga Audiencia</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-code text-label-code pt-space-xs text-on-surface-variant">
+<span>Estrategia recomendada: <span class="text-on-surface font-bold">Diferenciación Radical</span></span>
+<span class="text-on-surface-variant hover:text-on-surface underline cursor-pointer">Ver análisis de fatiga</span>
+</div>
+</div>
+<!-- Cuadrante 4: Micro-Nichos de Fidelización -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-lg flex flex-col justify-between gap-space-md shadow-md group hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">loyalty</span>
+              Comunidad Núcleo
+            </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Micro-Nichos de Alta Conversión</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Volumen modesto pero ratio de comentarios y lealtad de suscriptores insuperable.</p>
+</div>
+<span class="w-8 h-8 rounded-lg bg-surface-container-highest text-on-surface font-label-code font-bold flex items-center justify-center text-body-sm">
+            Q4
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Hardware Setup para Creadores</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-semibold">28% Comentarios</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Backstage de Producción 4K</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface font-semibold">Alto Engagement</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-code text-label-code pt-space-xs text-on-surface-variant">
+<span>Conversión a Lead: <span class="text-on-surface font-bold">11.2%</span></span>
+<span class="text-on-surface-variant hover:text-on-surface underline cursor-pointer">Ver plantillas de fidelidad</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gestor de Tendencias y Hooks Diarios -->
+<div class="flex flex-col gap-space-md rounded-xl bg-surface-container-low p-space-lg shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gestor de Tendencias y Hooks Diarios</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 fórmulas virales auditadas en las últimas 24 horas listas para ejecución</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-code text-label-code text-secondary font-semibold">4 Tendencias Activas</span>
+</div>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mt-space-xs">
+<!-- Card 1: Formato Viral -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-primary-container/15 text-primary font-semibold uppercase">
+              Formato Viral
+            </span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">dynamic_feed</span>
+</div>
+<div class="relative w-full h-32 rounded-lg overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High contrast split screen tutorial shot with neon cyan and deep magenta studio lighting, smartphone showing fast visual demonstration of digital interface, dark mood aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBffqQdENvVUu_C0AeYSAFCEqlqdxi-IGNmv8RYsthjwRrC8UNnHMMr83SdAfAcuy3edT8VNAgA3ox5MytwaxKX6gYycK5PDo0QCQpCfoNhhNGu6-gnOHWy89Y4hDxs3lSohwV3wtWM9hii7BKIIdc1EaUPjI_W5BLT519ZqnnaqIIZtp3qOZ5rNSujtKDuJE05WPGjXU6lwhDdkH-cUXOCWiFZGzpg_E4xVEQnmQHNMiGjsX6zBZPJeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center text-on-surface font-label-code text-label-code">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded backdrop-blur-md">Split Format</span>
+<span class="text-secondary font-bold">+140% Compartidos</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-base leading-snug">
+              Pregunta Controversial + Demostración Visual Rápida
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Inicia con confrontación en texto los primeros 1.2 segundos, seguido inmediatamente de un corte dinámico con zoom in.
+            </p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:brightness-110 active:scale-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Crear Guión con esta Tendencia</span>
+</button>
+</div>
+<!-- Card 2: Sonido Viral con Reproductor -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-secondary-container/15 text-secondary font-semibold uppercase">
+              Sonido Viral
+            </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">graphic_eq</span>
+</div>
+<div class="relative w-full h-32 rounded-lg overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Futuristic cyber audio soundwave waveform illuminated in electric cyan over dark obsidian backdrop with soft digital dust particles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCav79EVtfe0KDQ8bqaLGw796u_Mo0qquOv3kUS8e6noLc8fVaJD7hqLbPRvnhFqWZmV7NCNEoUMqkdZjJfw3Z1ENdnYxsF6QeOX-WAOrgzaGgzlAIChYeBwEWwT7r9nnTSEogdhZ8gA6sQfnMmF6gf1qIzeOj5EtW-5jN-Ol0NKgk31Nr-qCQB5SjE4Q1eeJFvTEBSqGE0F0ovxSNyetPM67O2vx3Znsns3qK6VT6fAHq051KGa_TuDw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center text-on-surface font-label-code text-label-code">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded backdrop-blur-md">Trending #3</span>
+<span class="text-secondary font-bold">España / Latam</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-base leading-snug">
+              Phonk Pulse Cyberbeat (Trending #3)
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              BPM acelerado a 138 pulsos, pico en segundo 4. Ideal para transiciones bruscas con gancho de texto sincronizado.
+            </p>
+</div>
+<!-- Micro Audio Player Mockup -->
+<div class="p-2 rounded-lg bg-surface-container-lowest flex items-center gap-space-xs">
+<button aria-label="Reproducir pista viral" class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 hover:scale-105 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex-1 flex items-center gap-0.5 h-6">
+<div class="w-1 bg-secondary h-2 rounded-full"></div>
+<div class="w-1 bg-secondary h-4 rounded-full"></div>
+<div class="w-1 bg-secondary h-5 rounded-full"></div>
+<div class="w-1 bg-secondary h-3 rounded-full"></div>
+<div class="w-1 bg-secondary-container h-6 rounded-full animate-pulse"></div>
+<div class="w-1 bg-secondary h-4 rounded-full"></div>
+<div class="w-1 bg-surface-container-highest h-3 rounded-full"></div>
+<div class="w-1 bg-surface-container-highest h-2 rounded-full"></div>
+<div class="w-1 bg-surface-container-highest h-4 rounded-full"></div>
+<div class="w-1 bg-surface-container-highest h-3 rounded-full"></div>
+<div class="w-1 bg-surface-container-highest h-1 rounded-full"></div>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant text-[10px]">0:24</span>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:brightness-110 active:scale-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Crear Guión con esta Tendencia</span>
+</button>
+</div>
+<!-- Card 3: Estructura de Hook -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-semibold uppercase">
+              Estructura Hook
+            </span>
+<span class="material-symbols-outlined text-on-surface text-[20px]">psychology</span>
+</div>
+<div class="relative w-full h-32 rounded-lg overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A presenter staring intensely into smartphone camera lens with dramatic rim lighting and bold kinetic typographic overlay on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAKcuCkzMr6tXVFEcSI5SY-9Yzfzc5H7ZEhjXc-8lMXbHsHpdDAGH5Y2y7MRWjrs8qY-lb8nZOc53hIdRl660xtWg2V8gbwGuU7aHJzi11JICgKMJ693YhGCQ2VN4I13VAtJemUU1FjXeMAUUksCii7jMK1t0lhlD0VsoP2JHwd4rNg07eBusecTpJEDOaSHiKdnE9IDMzWs3gAbY6NOgjACPOoEy7V4WiSC-1UD6_Wv94bfVpwvnRbg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center text-on-surface font-label-code text-label-code">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded backdrop-blur-md">48h Track</span>
+<span class="text-primary font-bold">4.2M Vistas Acum.</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-base leading-snug">
+              "Esto es lo que nadie te dice sobre..."
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Psicología de exclusividad y misterio con retención probada de 67% en los primeros 3 segundos del vídeo.
+            </p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:brightness-110 active:scale-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Crear Guión con esta Tendencia</span>
+</button>
+</div>
+<!-- Card 4: Formato B-Roll Dinámico -->
+<div class="rounded-xl bg-surface-container p-space-md flex flex-col justify-between gap-space-md shadow-md hover:bg-surface-container-high transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-primary-container/15 text-primary font-semibold uppercase">
+              Micro-Formato
+            </span>
+<span class="material-symbols-outlined text-secondary text-[20px]">shutter_speed</span>
+</div>
+<div class="relative w-full h-32 rounded-lg overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Macro perspective of robotic digital stylus tapping on transparent luminescent keyboard with vibrant pink and deep violet reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPMhaOyBf89mrKzD1SEEwqWGhLLGK0j3Je4ucFdr4S-hd7P_LdJiKBZlg_IN6Dzq8aNF1RxO6FKZFjj-44aQ1zoaNz3mM45PjE_TyQZzK_s5P5uHqA0ze-CgHGSk8L2OIIW0yFGJFZcggd1t2ytAYzwliTOFtxrsbI8_LUYKbrgNDkBOCz-943AsDq8uNi9BVE4JEzZsccGoHdw6wl2roya1Qq3ygOU23giH-FXYz5kUBG4_5kcN2FzA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex justify-between items-center text-on-surface font-label-code text-label-code">
+<span class="bg-surface-container-lowest/80 px-1.5 py-0.5 rounded backdrop-blur-md">Fast Cut</span>
+<span class="text-secondary font-bold">Tasa Guardado 21%</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-base leading-snug">
+              B-Roll Silencioso + Subtítulos Hipnóticos
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Toma de macro-escritorio con música lo-fi cyber y texto frase por frase en el centro exacto de la pantalla.
+            </p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-space-xs py-2 px-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold hover:brightness-110 active:scale-95 transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Crear Guión con esta Tendencia</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const actionButtons = document.querySelectorAll('button');
+    actionButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const text = btn.innerText || '';
+        if (text.includes('Crear Guión')) {
+          const original = btn.innerHTML;
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Cargando en IA Pro...</span>';
+          setTimeout(() => {
+            btn.innerHTML = original;
+          }, 1200);
+        }
+      });
+    });
+  })();
+</script></div></main><main data-page="strategy" style="display:none;" class="relative pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 overflow-hidden z-0 pl-[260px]"><div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-3xl"></div></div><div class="relative z-10 w-full p-8"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs scoped to canvas -->
+<div class="relative w-full max-w-[1600px] mx-auto pb-space-xl">
+<div class="absolute -top-10 right-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 left-10 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. Header de Sección -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-code text-label-code tracking-wider uppercase">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+            IA Engine v4.8 • Entrenado con 2.4M TikToks virales
+          </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/10 text-secondary-fixed-dim font-label-code text-label-code">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+            Latencia 420ms
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+          Generador Predictivo de Guiones por IA
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          Arquitectura de guiones optimizados para la retención del algoritmo de TikTok, basados en datos en tiempo real de tu audiencia.
+        </p>
+</div>
+<!-- Mode Selector Tabs -->
+<div class="flex items-center p-1 rounded-xl bg-surface-container-low shrink-0 shadow-sm">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md font-semibold transition-all shadow-sm" id="mode-viral" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">local_fire_department</span>
+<span>Modo Viral Aggressive</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-all" id="mode-edu" type="button">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Modo Educativo / Conversión</span>
+</button>
+</div>
+</header>
+<!-- Main Grid 2 Columns: 40% Control Deck / 60% Script Architecture -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Columna Izquierda: Panel de Parámetros (40% -> 5 cols en 12-col grid) -->
+<section aria-label="Parámetros de Generación" class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-md relative overflow-hidden">
+<!-- Glass sheen top edge -->
+<div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-outline-variant/40 to-transparent"></div>
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Parámetros del Algoritmo</h2>
+</div>
+<span class="font-label-code text-label-code text-secondary-fixed-dim uppercase bg-surface-container px-2 py-0.5 rounded">CONFIG_LIVE</span>
+</div>
+<!-- Selector de Temática del Radar -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider flex items-center justify-between" for="theme-select">
+<span>Temática del Radar Activo</span>
+<span class="text-primary font-label-code normal-case text-body-sm font-medium">Volumen +418% esta semana</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 pl-space-md pr-10 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-high transition-all cursor-pointer" id="theme-select">
+<option selected="">Tutoriales Prácticos de IA (🔥 Alta Oportunidad)</option>
+<option>Automatización Sin Código & Workflows (⚡ Creciente)</option>
+<option>Herramientas Secretas de Productividad (🚀 Muy Viral)</option>
+<option>Desarrollo Web en 60 Segundos (🎯 Alta Retención)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">
+                arrow_drop_down
+              </span>
+</div>
+</div>
+<!-- Tono y Estilo (Pills) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Tono & Dinámica Narrativa</label>
+<div class="grid grid-cols-2 gap-space-xs" id="tone-selector">
+<button class="tone-btn active flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-sm transition-all text-left" type="button">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Directo y Rápido</span>
+</button>
+<button class="tone-btn flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-all text-left" type="button">
+<span class="material-symbols-outlined text-[16px]">auto_stories</span>
+<span>Narrativa / Story</span>
+</button>
+<button class="tone-btn flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-all text-left" type="button">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span>Controversial</span>
+</button>
+<button class="tone-btn flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-all text-left" type="button">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Técnico / Autoridad</span>
+</button>
+</div>
+</div>
+<!-- Duración Objetivo -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Duración Objetivo</label>
+<span class="font-label-code text-label-code text-secondary">Ideal: 42s (~145 palabras)</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs" id="duration-selector">
+<button class="duration-btn py-2 px-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-code text-label-code transition-all text-center" type="button">
+                15 - 30s
+              </button>
+<button class="duration-btn active py-2 px-space-xs rounded-lg bg-secondary-container text-on-secondary-container font-label-code text-label-code font-semibold shadow-sm transition-all text-center" type="button">
+                30 - 60s <span class="block text-[10px] font-normal uppercase tracking-tight">Recomendado</span>
+</button>
+<button class="duration-btn py-2 px-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-code text-label-code transition-all text-center" type="button">
+                60 - 90s
+              </button>
+</div>
+</div>
+<!-- Switch Toggle Hook Ingestion -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">rss_feed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-tight">Inyectar Hooks de últimas 24h</span>
+<span class="font-label-code text-label-code text-on-surface-variant">4,120 ganchos escaneados hoy</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" id="toggle-hooks" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface peer-checked:bg-secondary-container after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-secondary-container after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+<!-- Concepto Clave Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider" for="concept-input">Concepto Clave o Niche Angle</label>
+<div class="relative">
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container font-body-sm text-body-sm text-on-surface placeholder:text-outline-variant focus:outline-none focus:bg-surface-container-high transition-all resize-none" id="concept-input" placeholder="ej. Cómo usar Cursor AI para programar una app completa en 15 minutos" rows="3">Cómo usar Cursor AI para programar más rápido reemplazando tareas manuales repetitivas</textarea>
+<div class="absolute right-2 bottom-2 text-on-surface-variant font-label-code text-label-code">
+<span>94/180 car.</span>
+</div>
+</div>
+</div>
+<!-- Primary Generation Button with Neon Pink to Purple Gradient Glow -->
+<button class="w-full relative group overflow-hidden py-3.5 px-space-md rounded-xl font-headline-sm text-body-md font-bold text-white transition-all transform active:scale-[0.99] shadow-[0_0_24px_-4px_rgba(255,74,141,0.6)] bg-gradient-to-r from-primary-container via-inverse-primary to-primary-container bg-[length:200%_auto] hover:bg-right hover:brightness-110" id="generate-btn" type="button">
+<span class="relative z-10 flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] animate-spin hidden" id="spinner-icon">sync</span>
+<span class="material-symbols-outlined text-[20px]" id="sparkle-icon">bolt</span>
+<span>Generar Guión Optimizado con IA</span>
+</span>
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+</button>
+<!-- Micro context banner -->
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant font-label-code text-label-code text-center pt-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+<span>Alineado con algoritmo TikTok v24.2 • Audio sync compatible</span>
+</div>
+</div>
+<!-- Creator Profile Preview Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Close up photograph of a young creator in a dark neon-lit studio with cyan and magenta ambient rim light looking at computer screens analyzing viral metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0vy0Mx5QpVwjsOzfuwk9Pu8oK5zgZM9msi0gJT0bqQFwgPEshsM94Xnjf-iZZDuqIyW_-GsuLh2QzUzxviBZVjXAEq05PIjjs0RAvyAsVFQw7UNbpSkfa1U_wRRSI_bRwRfK4AY0U5pYCitrJ1xV0cU4xapYR7-fbIlbuHnrK_KXAvRdZW7Y38JvBOPbWfWWH1D-isjuqeXIuUlEqO4WgsYH_boqEmG7pUturAJrFGkfhi9-J8kvFRg"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Perfil Objetivo: Tech & Dev</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Audiencia: 18-34 años • Tasa retención 68.4%</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+</div>
+</section>
+<!-- Columna Derecha: Estructura del Guión Generado (60% -> 7 cols en 12-col grid) -->
+<section aria-label="Resultado del Guión" class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Score Bar & Benchmark Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 shrink-0 flex items-center justify-center">
+<svg class="w-16 h-16 -rotate-90" viewbox="0 0 48 48">
+<circle class="stroke-surface-container-highest" cx="24" cy="24" fill="transparent" r="20" stroke-width="4"></circle>
+<circle class="stroke-primary-container" cx="24" cy="24" fill="transparent" r="20" stroke-dasharray="125.6" stroke-dashoffset="7.5" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-metric-md text-metric-md text-on-surface font-bold leading-none">94</span>
+<span class="font-label-code text-[9px] text-on-surface-variant">/100</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Potencial FYP Excepcional</h3>
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary font-label-code text-label-code uppercase font-semibold">Potencial FYP Alto</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                La fórmula de apertura rompe patrón a los 1.2s y la promesa inicial proyecta superar la barrera del 75% en los primeros 3 segundos.
+              </p>
+</div>
+</div>
+<div class="flex md:flex-col items-end justify-between md:justify-center gap-1 shrink-0 pl-space-md md:border-l md:border-surface-container-high">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Viral Coefficient</span>
+<span class="font-label-code text-metric-md text-secondary font-bold">2.84x avg</span>
+<span class="font-label-code text-body-sm text-on-surface-variant">Probabilidad viral: 91%</span>
+</div>
+</div>
+<!-- Script Workspace Container -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-lg shadow-md relative">
+<!-- Bloque 1: Gancho Visual y Auditivo (0-3s) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold">BLOQUE 1</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Gancho Visual y Auditivo</h4>
+<span class="font-label-code text-label-code text-on-surface-variant">[0:00 - 0:03s]</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-primary font-label-code text-label-code">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>Retención estimada: 81%</span>
+</div>
+</div>
+<!-- Caja destacada con borde neón magenta y highlight glass -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-[0_0_20px_-6px_rgba(255,74,141,0.45)] relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-primary-container"></div>
+<div class="pl-space-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface font-bold italic leading-relaxed">
+                    «Si sigues programando línea por línea en 2025, estás perdiendo 4 horas al día. Mira esto.»
+                  </p>
+<button class="shrink-0 p-1.5 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors" title="Copiar solo el hook" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+<!-- Pauta de Cámara & Audio Cue -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs pt-space-xs mt-space-xs border-t border-surface-container-high">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">videocam</span>
+<span class="font-body-sm text-body-sm"><strong class="text-on-surface">Cámara:</strong> Corte rápido a pantalla con zoom al código</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[18px]">graphic_eq</span>
+<span class="font-body-sm text-body-sm"><strong class="text-on-surface">Audio FX:</strong> Notificación de terminal aguda en seco</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bloque 2: Desarrollo y Retención (4-40s) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-code text-label-code font-bold">BLOQUE 2</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Desarrollo & Dinámica de Retención</h4>
+<span class="font-label-code text-label-code text-on-surface-variant">[0:04 - 0:40s]</span>
+</div>
+<span class="font-label-code text-label-code text-secondary-fixed-dim">3 Micro-recompensas</span>
+</div>
+<!-- Pasos secuenciales con Timeline connector -->
+<div class="flex flex-col gap-space-sm pl-2 relative before:absolute before:left-[17px] before:top-4 before:bottom-4 before:w-0.5 before:bg-surface-container-highest">
+<!-- Paso 1 -->
+<div class="relative flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center font-label-code text-label-code font-bold shrink-0 transition-all z-10">
+                  1
+                </div>
+<div class="flex-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary font-semibold">[0:04 - 0:15] Paso 1: El problema oculto</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Ritmo 2x visual</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                    "La mayoría usa ChatGPT en una pestaña secundaria y pasa el día copiando y pegando. Cursor AI lee todo tu repositorio completo sin que toques una sola tecla."
+                  </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">smart_display</span>
+<span>Acción en pantalla: B-Roll mostrando frustración con 20 pestañas abiertas vs 1 ventana con Cursor.</span>
+</div>
+</div>
+</div>
+<!-- Paso 2 -->
+<div class="relative flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center font-label-code text-label-code font-bold shrink-0 transition-all z-10">
+                  2
+                </div>
+<div class="flex-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary font-semibold">[0:15 - 0:28] Paso 2: El prompt exacto de valor</span>
+<span class="font-label-code text-[11px] text-primary font-medium">Clímax de Atención</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                    "Presionas <span class="bg-surface-container-highest px-1 py-0.5 rounded font-label-code text-secondary">Cmd + K</span> y escribes: 'Refactoriza esta API route para agregar caché con Redis y control de errores tipado'. En 3 segundos, genera el código completo con cero bugs."
+                  </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">keyboard</span>
+<span>Acción en pantalla: Captura en vivo del autocompletado en cascada mientras hablas a cámara.</span>
+</div>
+</div>
+</div>
+<!-- Paso 3 -->
+<div class="relative flex items-start gap-space-sm group">
+<div class="w-8 h-8 rounded-full bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center font-label-code text-label-code font-bold shrink-0 transition-all z-10">
+                  3
+                </div>
+<div class="flex-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-all flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-label-code text-secondary font-semibold">[0:28 - 0:40] Paso 3: Prueba social & Antes vs Después</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Resolución</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                    "Lo que antes me tomaba una tarde entera de viernes, ahora lo resuelvo antes de que se enfríe mi café. Pantalla dividida: 45 minutos vs 4 minutos."
+                  </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm pt-0.5">
+<span class="material-symbols-outlined text-[16px] text-primary">view_stream</span>
+<span>Acción en pantalla: Split screen con cronómetro digital acelerado y resultado compilado en verde.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bloque 3: Llamada a la Acción (CTA) de Cierre (40-45s) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-code text-label-code font-bold">BLOQUE 3</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Llamada a la Acción (CTA) de Cierre</h4>
+<span class="font-label-code text-label-code text-on-surface-variant">[0:40 - 0:45s]</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-semibold">Tasa de comentarios x4</span>
+</div>
+<!-- Caja destacada con borde neón cian (#00F0FF) -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-[0_0_20px_-6px_rgba(0,238,252,0.4)] relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1.5 h-full bg-secondary-container"></div>
+<div class="pl-space-sm flex flex-col gap-space-xs">
+<p class="font-body-lg text-body-lg text-on-surface font-bold leading-relaxed">
+                  «Comenta <span class="text-secondary bg-surface-container-high px-2 py-0.5 rounded font-label-code">'CURSOR'</span> y te envío por mensaje privado la guía de los 10 prompts que uso a diario para multiplicar mi velocidad.»
+                </p>
+<div class="flex items-center gap-space-xs pt-space-xs mt-space-xs border-t border-surface-container-high text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">psychology</span>
+<span><strong class="text-secondary">Razón algorítmica:</strong> Dispara la tasa de comentarios x4 en la primera hora, factor #1 de retención y distribución en el FYP de TikTok.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barra de Acciones del Guión -->
+<div class="pt-space-md border-t border-surface-container-high flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md font-semibold transition-all" id="copy-script-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">copy_all</span>
+<span id="copy-text">Copiar Guión Completo</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md transition-all" id="save-fav-btn" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" id="fav-icon">bookmark_border</span>
+<span>Guardar en Favoritos</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Teleprompter / PDF</span>
+</button>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-secondary-container/10 hover:bg-secondary-container/20 text-secondary font-body-md text-body-md font-semibold transition-all" id="generate-variation-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Generar Variación de Hook</span>
+</button>
+</div>
+</div>
+<!-- Metric Details Pill Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tiempo Lectura</span>
+<span class="font-metric-md text-metric-md text-on-surface font-bold">41 segundos</span>
+<span class="font-label-code text-[11px] text-secondary">138 palabras exactas</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Pico de Curiosidad</span>
+<span class="font-metric-md text-metric-md text-on-surface font-bold">0:03s (Hook)</span>
+<span class="font-label-code text-[11px] text-primary">+89% engagement</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tipo de Formato</span>
+<span class="font-metric-md text-metric-md text-on-surface font-bold">Tutorial Ágil</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Screencast + Talking</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Audio Recomendado</span>
+<span class="font-metric-md text-metric-md text-on-surface font-bold">Cyber Synth Lo-Fi</span>
+<span class="font-label-code text-[11px] text-secondary">En tendencia 98k vídeos</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Mode selection toggle
+  const modeViral = document.getElementById('mode-viral');
+  const modeEdu = document.getElementById('mode-edu');
+
+  if (modeViral && modeEdu) {
+    modeViral.addEventListener('click', () => {
+      modeViral.className = "flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md font-semibold transition-all shadow-sm";
+      modeEdu.className = "flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-all";
+    });
+
+    modeEdu.addEventListener('click', () => {
+      modeEdu.className = "flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-body-md text-body-md font-semibold transition-all shadow-sm";
+      modeViral.className = "flex items-center gap-space-xs px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-body-md text-body-md transition-all";
+    });
+  }
+
+  // Tone selector buttons
+  const toneBtns = document.querySelectorAll('.tone-btn');
+  toneBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      toneBtns.forEach(b => {
+        b.className = "tone-btn flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-all text-left";
+      });
+      btn.className = "tone-btn active flex items-center justify-center gap-1.5 px-space-sm py-2 rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold shadow-sm transition-all text-left";
+    });
+  });
+
+  // Duration buttons
+  const durBtns = document.querySelectorAll('.duration-btn');
+  durBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      durBtns.forEach(b => {
+        b.className = "duration-btn py-2 px-space-xs rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-code text-label-code transition-all text-center";
+      });
+      btn.className = "duration-btn active py-2 px-space-xs rounded-lg bg-secondary-container text-on-secondary-container font-label-code text-label-code font-semibold shadow-sm transition-all text-center";
+    });
+  });
+
+  // Copy Feedback
+  const copyBtn = document.getElementById('copy-script-btn');
+  const copyText = document.getElementById('copy-text');
+  if (copyBtn && copyText) {
+    copyBtn.addEventListener('click', () => {
+      const originalText = copyText.textContent;
+      copyText.textContent = "¡Copiado al Portapapeles!";
+      copyBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+      setTimeout(() => {
+        copyText.textContent = originalText;
+        copyBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+      }, 2000);
+    });
+  }
+
+  // Save to Favorites Toggle
+  const favBtn = document.getElementById('save-fav-btn');
+  const favIcon = document.getElementById('fav-icon');
+  if (favBtn && favIcon) {
+    let isFav = false;
+    favBtn.addEventListener('click', () => {
+      isFav = !isFav;
+      if (isFav) {
+        favIcon.textContent = "bookmark";
+        favIcon.style.fontVariationSettings = "'FILL' 1";
+        favBtn.classList.add('text-primary');
+      } else {
+        favIcon.textContent = "bookmark_border";
+        favIcon.style.fontVariationSettings = "'FILL' 0";
+        favBtn.classList.remove('text-primary');
+      }
+    });
+  }
+
+  // Simulated Generation Click
+  const genBtn = document.getElementById('generate-btn');
+  const spinnerIcon = document.getElementById('spinner-icon');
+  const sparkleIcon = document.getElementById('sparkle-icon');
+  if (genBtn && spinnerIcon && sparkleIcon) {
+    genBtn.addEventListener('click', () => {
+      spinnerIcon.classList.remove('hidden');
+      sparkleIcon.classList.add('hidden');
+      genBtn.setAttribute('disabled', 'true');
+      genBtn.classList.add('opacity-80');
+
+      setTimeout(() => {
+        spinnerIcon.classList.add('hidden');
+        sparkleIcon.classList.remove('hidden');
+        genBtn.removeAttribute('disabled');
+        genBtn.classList.remove('opacity-80');
+      }, 850);
+    });
+  }
+
+  // Variation Button Simulation
+  const varBtn = document.getElementById('generate-variation-btn');
+  if (varBtn) {
+    varBtn.addEventListener('click', () => {
+      varBtn.classList.add('scale-95');
+      setTimeout(() => varBtn.classList.remove('scale-95'), 150);
+    });
+  }
+</script></div></main><main data-page="settings" style="display:none;" class="relative pt-16 bg-surface min-h-screen"><div class="pointer-events-none fixed inset-0 overflow-hidden z-0 pl-[260px]"><div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl"></div><div class="absolute top-0 right-0 w-[30rem] h-[30rem] bg-secondary-container/5 rounded-full blur-3xl"></div></div><div class="relative z-10 w-full p-8"><div class="flex flex-col w-full gap-space-xl">
+<!-- Header de Sección y Tabs -->
+<div class="flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code text-label-code text-secondary tracking-widest uppercase">System Core // v2.4</span>
+<span class="w-1 h-1 rounded-full bg-secondary-container"></span>
+<span class="font-label-code text-label-code text-on-surface-variant">Cluster eu-west-1</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+          Configuración de Cuenta & Sincronización
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+          Administración de integraciones API, base de datos en tiempo real con Supabase y automatización de recolección de métricas de TikTok.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold shadow-lg hover:brightness-110 active:scale-95 transition-all" id="saveTopBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_done</span>
+<span>Guardar Cambios</span>
+</button>
+</div>
+</div>
+<!-- Navegación por pestañas interna -->
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded-xl overflow-x-auto w-full max-w-fit">
+<button class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>General & Perfil</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg font-body-md text-body-md bg-surface-container-high text-secondary font-medium shadow-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span>Conexiones & API</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">schedule_send</span>
+<span>Automatización de Datos</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Facturación & Plan Enterprise</span>
+</button>
+</div>
+</div>
+<!-- Sección de Conexiones Activas (Bento Grid) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">link</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Conexiones Activas de Alta Concurrencia</h2>
+</div>
+<div class="flex items-center gap-space-xs font-label-code text-label-code text-on-surface-variant">
+<span>Último sync de tokens:</span>
+<span class="text-secondary font-medium">hace 18 min</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<!-- Tarjeta 1: TikTok Content Marketing API -->
+<div class="relative bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between overflow-hidden shadow-xl group hover:bg-surface-container transition-all duration-300">
+<div class="absolute -right-16 -top-16 w-44 h-44 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-fixed shadow-md">
+<span class="material-symbols-outlined text-[28px]">graphic_eq</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">TikTok Content Marketing API</span>
+<span class="font-label-code text-label-code text-on-surface-variant">OAuth2.0 Token Scope: Read / Insights / Retention</span>
+</div>
+</div>
+<!-- Pill Conectado -->
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/10 text-secondary font-label-code text-label-code shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-fixed"></span>
+</span>
+<span>Conectado y Activo</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Cuenta vinculada</span>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-body-md text-body-md text-on-surface font-semibold">@sofia.techpulse</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">TikTok Account ID</span>
+<span class="font-label-code text-label-code text-on-surface mt-0.5">tk_9841829471</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Permisos Concedidos en Live Production</span>
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-1 rounded bg-surface-container font-label-code text-label-code text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Lectura de vídeo analytics
+              </span>
+<span class="px-space-sm py-1 rounded bg-surface-container font-label-code text-label-code text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Retención por segundo
+              </span>
+<span class="px-space-sm py-1 rounded bg-surface-container font-label-code text-label-code text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Datos demográficos de audiencia
+              </span>
+</div>
+</div>
+<!-- Micro Sparkline de Ingesta Reciente -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest/60 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-code text-label-code text-on-surface-variant">Throughput de eventos hoy</span>
+<span class="font-metric-md text-metric-md text-on-surface font-semibold">48,290 reqs</span>
+</div>
+<svg class="w-32 h-7" fill="none" viewbox="0 0 120 28">
+<path d="M0 22L15 18L30 20L45 12L60 15L75 6L90 10L105 3L120 7" stroke="#ff4a8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M0 22L15 18L30 20L45 12L60 15L75 6L90 10L105 3L120 7V28H0Z" fill="url(#gradTiktok)" opacity="0.15"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="gradTiktok" x1="0" x2="0" y1="0" y2="28">
+<stop stop-color="#ff4a8d"></stop>
+<stop offset="1" stop-color="#ff4a8d" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-lg pt-space-md border-t-0 flex-wrap sm:flex-nowrap">
+<button class="w-full sm:w-auto flex-1 flex items-center justify-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-all active:scale-95" id="syncNowBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Forzar Sincronización Manual</span>
+</button>
+<button class="w-full sm:w-auto px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-body-md text-body-md font-medium transition-colors" type="button">
+            Gestionar Tokens
+          </button>
+</div>
+</div>
+<!-- Tarjeta 2: Base de Datos Supabase -->
+<div class="relative bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between overflow-hidden shadow-xl group hover:bg-surface-container transition-all duration-300">
+<div class="absolute -right-16 -top-16 w-44 h-44 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-md relative z-10">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shadow-md">
+<span class="material-symbols-outlined text-[28px]">database</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Supabase (PostgreSQL & Vector DB)</span>
+<span class="font-label-code text-label-code text-on-surface-variant">pgvector Habilitado // Embedding Dim: 1536</span>
+</div>
+</div>
+<!-- Indicador Cian -->
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/10 text-secondary-fixed font-label-code text-label-code shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed shadow-[0_0_8px_#00eefc]"></span>
+<span>Online - Latencia 24ms</span>
+</div>
+</div>
+<div class="flex flex-col p-space-sm bg-surface-container-lowest rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Endpoint del Proyecto</span>
+<div class="flex items-center gap-1 text-secondary font-label-code text-label-code">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>RLS: Habilitado (Zero Trust)</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="font-label-code text-label-code text-secondary truncate max-w-sm">https://yabkpxvjqrmwlszn.supabase.co</span>
+<button aria-label="Copiar endpoint" class="text-on-surface-variant hover:text-on-surface transition-colors p-1" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Tablas Sincronizadas & Registros</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<div class="flex flex-col p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-code text-label-code text-on-surface-variant">tiktok_posts</span>
+<span class="font-metric-md text-metric-md text-on-surface font-medium mt-0.5">58</span>
+</div>
+<div class="flex flex-col p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-code text-label-code text-on-surface-variant">algorithm_metrics</span>
+<span class="font-metric-md text-metric-md text-primary font-medium mt-0.5">14.8k</span>
+</div>
+<div class="flex flex-col p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-code text-label-code text-on-surface-variant">generated_scripts</span>
+<span class="font-metric-md text-metric-md text-on-surface font-medium mt-0.5">124</span>
+</div>
+<div class="flex flex-col p-space-xs rounded bg-surface-container text-center">
+<span class="font-label-code text-label-code text-on-surface-variant">daily_hooks</span>
+<span class="font-metric-md text-metric-md text-secondary font-medium mt-0.5">360</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest/60 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">sync_saved_locally</span>
+<span class="font-label-code text-label-code text-on-surface">Supabase Realtime CDC Listener</span>
+</div>
+<span class="font-label-code text-label-code text-secondary font-medium">99.98% Uptime</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-lg pt-space-md flex-wrap sm:flex-nowrap">
+<button class="w-full sm:w-auto flex-1 flex items-center justify-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-md text-body-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>SQL Editor & Índices HNSW</span>
+</button>
+<button class="w-full sm:w-auto px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-body-md text-body-md font-medium transition-colors" type="button">
+            Test Pooler (Port 6543)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sección de Automatización: Cron Jobs & Algoritmo -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-gutter">
+<!-- Columna 1 & 2: Cron Jobs & Toggles -->
+<div class="xl:col-span-2 bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-lg shadow-xl">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">history_toggle_off</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sistema de Actualización Diaria (Cron Jobs)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Configuración de triggers automáticos para análisis de algoritmo y predicción de retención</span>
+</div>
+</div>
+<span class="font-label-code text-label-code px-space-sm py-1 rounded bg-surface-container-highest text-secondary">
+          Next execution: 04:00 AM UTC
+        </span>
+</div>
+<!-- Selector de Frecuencia -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container-lowest rounded-lg">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="cronFrequency">
+          Frecuencia de Actualización Principal
+        </label>
+<div class="relative">
+<select class="w-full h-11 px-space-md pr-10 rounded-lg bg-surface-container font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer" id="cronFrequency">
+<option selected="">Cada 24 horas a las 04:00 AM UTC (Recomendado para refresco de hooks de TikTok)</option>
+<option>Cada 12 horas (04:00 AM / 16:00 PM UTC)</option>
+<option>Cada 6 horas (Alta frecuencia - Consumo intensivo API)</option>
+<option>Continuo en tiempo real vía Webhooks TikTok for Business</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">
+            expand_more
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          La ventana de las 04:00 AM UTC coincide con el recalculado diario de afinidad por sonido y hashtags en los servidores de TikTok.
+        </p>
+</div>
+<!-- Toggles con switches interactivos -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Triggers de Automatización & Machine Learning</span>
+<!-- Toggle 1 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container/70 cursor-pointer transition-colors group">
+<div class="flex items-start gap-space-sm pr-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary-fixed transition-colors">
+                Recalcular automáticamente scores de retención de nuevos vídeos
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Ejecuta regresiones lineales en los primeros 3 segundos y caída a los 15 segundos cada vez que un vídeo es detectado.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+<!-- Toggle 2 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container/70 cursor-pointer transition-colors group">
+<div class="flex items-start gap-space-sm pr-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-fixed mt-0.5">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary-fixed transition-colors">
+                Alertar por email/webhook cuando un vídeo supere las 100K vistas en las primeras 2 horas
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Dispara webhook de alta prioridad hacia el canal de Slack del equipo de producción y creadores.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+<!-- Toggle 3 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container/70 cursor-pointer transition-colors group">
+<div class="flex items-start gap-space-sm pr-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary-fixed transition-colors">
+                Generar resumen predictivo de hooks virales cada mañana
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Sintetiza los 5 formatos de gancho con mayor velocidad de subida en la categoría de tecnología/lifestyle.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+<!-- Toggle 4 -->
+<label class="flex items-center justify-between p-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container/70 cursor-pointer transition-colors group">
+<div class="flex items-start gap-space-sm pr-space-md">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-on-surface-variant mt-0.5">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium group-hover:text-primary-fixed transition-colors">
+                Caché de embeddings para búsqueda semántica de guiones
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Almacena vectores intermedios en memoria Redis local para reducir latencia de consultas a menos de 5ms.
+              </span>
+</div>
+</div>
+<div class="relative shrink-0">
+<input checked="" class="sr-only peer toggle-input" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</label>
+</div>
+</div>
+<!-- Columna 3: Estado de Servidores & Telemetría Rápida -->
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-lg flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Salud del Pipeline</span>
+<span class="font-label-code text-label-code text-secondary font-medium">99.9% OK</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Límite de API TikTok (Diario)</span>
+<span class="text-on-surface">34,120 / 100,000</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 34%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Supabase Storage / Vector</span>
+<span class="text-on-surface">1.8 GB / 10 GB</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 18%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-code text-label-code">
+<span class="text-on-surface-variant">Tokens LLM (Claude 3.5 Sonnet)</span>
+<span class="text-on-surface">820k / 2.0M</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 41%;"></div>
+</div>
+</div>
+</div>
+<!-- Telemetría Gráfica Visual -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex flex-col gap-space-xs mt-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Tiempo de Respuesta Webhooks (24h)</span>
+<div class="flex items-end gap-1 h-12 pt-2">
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[40%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[55%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[35%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[60%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[45%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[70%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[30%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[25%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[80%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-secondary-container h-[95%] rounded-t shadow-[0_0_8px_#00eefc]"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[65%] rounded-t transition-colors"></div>
+<div class="flex-1 bg-surface-container-high hover:bg-secondary-container h-[40%] rounded-t transition-colors"></div>
+</div>
+<div class="flex justify-between font-label-code text-[10px] text-on-surface-variant">
+<span>00:00</span>
+<span>Avg: 38ms</span>
+<span>Ahora</span>
+</div>
+</div>
+</div>
+<!-- Tarjeta de Soporte VIP Enterprise -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between shadow-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-semibold">Technical Account Manager</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SLA Garantizado: < 15 min</span>
+</div>
+</div>
+<button class="p-space-xs rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sección 4: Perfil de Usuario, Facturación Enterprise y Webhooks -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Perfil de Elena Vance & Plan Enterprise -->
+<div class="lg:col-span-1 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img alt="Elena Vance" class="w-16 h-16 rounded-2xl object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDquUCHd1ubgHqM4gIou8g-fZzfong49T3fDHMmIF8I8AuQYS3cUzErecVmymGh0tVPnlulVkz3h8IHKZx_hW174x6xpqn0_vrOvIPTlspoqKsG-5oATJOh-m1wNHXXLvEnsOMlPxcj306n30OjGT4vBhQhK4Uoddf5kcSDgLeigcHupKVZpPGy_9HQLgXzjEROMRgfoMKJ4QzW4UNky82ofitbpepjXQCm2Y1RYsWsDYi4hCcSbdw5EQ"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[12px] font-bold">verified</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Elena Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Creative Director & Lead Strategist</span>
+<span class="font-label-code text-label-code text-secondary mt-0.5">elena.vance@agencytok.ai</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Suscripción Actual</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-code text-label-code font-bold">ACTIVE</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">TokPulse Enterprise Unlimited</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Renovación anual programada: 14 de Enero, 2026</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t-0 font-label-code text-label-code">
+<span class="text-on-surface-variant">Asientos Activos:</span>
+<span class="text-on-surface font-medium">8 de 10 creadores</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm mt-space-md">
+<button class="w-full flex items-center justify-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-md text-body-md font-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Facturas & Consumo</span>
+</button>
+</div>
+</div>
+<!-- Clave API para Webhooks Externos y Guardado -->
+<div class="lg:col-span-2 bg-surface-container-low rounded-xl p-space-lg flex flex-col justify-between shadow-xl">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Clave API TokPulse & Webhooks Externos</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acceso autenticado con permisos de invocación para Make, n8n o Zapier</span>
+</div>
+</div>
+<span class="font-label-code text-label-code px-space-sm py-1 rounded bg-secondary-container/10 text-secondary">Bearer Token</span>
+</div>
+<!-- Input Clave API con Copiado & Revelado -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="apiKeyField">
+            Producción API Key (Live Environment)
+          </label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-space-md pr-28 rounded-lg bg-surface-container-lowest font-label-code text-label-code text-on-surface tracking-wider focus:outline-none" id="apiKeyField" readonly="" type="password" value="tp_live_994a8bc31f9048ef929c4ba890123df8120e89"/>
+<div class="absolute right-2 flex items-center gap-1">
+<button aria-label="Mostrar/Ocultar clave" class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" id="toggleApiVisibility" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIcon">visibility</span>
+</button>
+<button aria-label="Copiar clave API" class="p-2 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" id="copyApiKeyBtn" type="button">
+<span class="material-symbols-outlined text-[18px]" id="copyIcon">content_copy</span>
+</button>
+</div>
+</div>
+<span class="font-label-code text-[11px] text-secondary hidden" id="copyFeedback">¡Clave API copiada al portapapeles!</span>
+</div>
+<!-- Input Webhook URL -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="webhookUrl">
+            URL de Destino de Webhook (Dispatch de Eventos de Retención)
+          </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">call_split</span>
+<input class="w-full h-11 pl-10 pr-space-md rounded-lg bg-surface-container font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-high transition-colors" id="webhookUrl" type="text" value="https://api.agencytok.ai/v1/tiktok/webhooks/retention-spike"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Payload: JSON estándar con id de vídeo, segundos pico, y coeficiente viral calculado.</span>
+</div>
+</div>
+<!-- Botón Principal de Guardado -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t-0 mt-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-code text-label-code">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>Encriptado con AES-256 en reposo</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-md h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-md text-body-md font-medium transition-colors" type="button">
+            Descartar
+          </button>
+<button class="w-full sm:w-auto flex items-center justify-center gap-space-xs px-space-lg h-11 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-md font-semibold shadow-lg hover:brightness-110 active:scale-95 transition-all" id="saveBottomBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Guardar Cambios de Configuración</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast de Confirmación Flotante -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-highest text-on-surface shadow-2xl" id="saveToast">
+<div class="w-7 h-7 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px] font-bold">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold">Configuración Actualizada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Conexiones sincronizadas con Supabase en tiempo real.</span>
+</div>
+</div>
+</div>
+<script>
+  (function initSettingsPage() {
+    // Revelar / Ocultar Clave API
+    const apiKeyField = document.getElementById('apiKeyField');
+    const toggleApiVisibility = document.getElementById('toggleApiVisibility');
+    const eyeIcon = document.getElementById('eyeIcon');
+    const copyApiKeyBtn = document.getElementById('copyApiKeyBtn');
+    const copyFeedback = document.getElementById('copyFeedback');
+
+    if (toggleApiVisibility && apiKeyField && eyeIcon) {
+      toggleApiVisibility.addEventListener('click', () => {
+        if (apiKeyField.type === 'password') {
+          apiKeyField.type = 'text';
+          eyeIcon.textContent = 'visibility_off';
+        } else {
+          apiKeyField.type = 'password';
+          eyeIcon.textContent = 'visibility';
+        }
+      });
+    }
+
+    // Copiar Clave API
+    if (copyApiKeyBtn && apiKeyField && copyFeedback) {
+      copyApiKeyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(apiKeyField.value);
+          copyFeedback.classList.remove('hidden');
+          setTimeout(() => {
+            copyFeedback.classList.add('hidden');
+          }, 3000);
+        } catch (err) {
+          apiKeyField.select();
+          document.execCommand('copy');
+          copyFeedback.classList.remove('hidden');
+          setTimeout(() => {
+            copyFeedback.classList.add('hidden');
+          }, 3000);
+        }
+      });
+    }
+
+    // Toast de Guardado
+    const saveTopBtn = document.getElementById('saveTopBtn');
+    const saveBottomBtn = document.getElementById('saveBottomBtn');
+    const syncNowBtn = document.getElementById('syncNowBtn');
+    const saveToast = document.getElementById('saveToast');
+
+    function triggerToast(message) {
+      if (!saveToast) return;
+      if (message) {
+        const textContainer = saveToast.querySelector('.font-body-sm');
+        if (textContainer) textContainer.textContent = message;
+      }
+      saveToast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      saveToast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        saveToast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+        saveToast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    if (saveTopBtn) {
+      saveTopBtn.addEventListener('click', () => triggerToast('Parámetros guardados y validados por Supabase.'));
+    }
+    if (saveBottomBtn) {
+      saveBottomBtn.addEventListener('click', () => triggerToast('Cambios de pipeline y webhook guardados exitosamente.'));
+    }
+
+    // Forzar Sincronización Manual
+    if (syncNowBtn) {
+      syncNowBtn.addEventListener('click', () => {
+        const icon = syncNowBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.classList.add('animate-spin');
+        syncNowBtn.setAttribute('disabled', 'true');
+        setTimeout(() => {
+          if (icon) icon.classList.remove('animate-spin');
+          syncNowBtn.removeAttribute('disabled');
+          triggerToast('Sincronización completa: 48 vídeos actualizados desde TikTok API.');
+        }, 1600);
+      });
+    }
+  })();
+</script></div></main>
+</div>
+
+<script>
+(function(){
+  function activateNav(path){
+    document.querySelectorAll('nav[data-active-classes] a[data-path]').forEach(function(a){
+      var activeClasses = a.closest('nav').getAttribute('data-active-classes').split(' ');
+      if(a.getAttribute('data-path') === path){
+        a.setAttribute('aria-current','page');
+        activeClasses.forEach(function(c){ a.classList.add(c); });
+      } else {
+        a.removeAttribute('aria-current');
+        activeClasses.forEach(function(c){ a.classList.remove(c); });
+      }
+    });
+  }
+  function showPage(path){
+    document.querySelectorAll('main[data-page]').forEach(function(m){
+      m.style.display = (m.getAttribute('data-page') === path) ? 'block' : 'none';
+    });
+    activateNav(path);
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[data-path]');
+    if(!link) return;
+    e.preventDefault();
+    showPage(link.getAttribute('data-path'));
+  });
+  showPage('dashboard');
+})();
+</script>
+
+</body>
+</html>
